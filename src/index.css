@@ -36,13 +36,14 @@ html{
   margin: auto;
   left: 0;
   right: 0;
+  height: 6vh;
+  bottom: 10vh;
   width: 50%;
   border-radius: 36px;
   background: #F2D0A7;
 }
 
-.swipe-open{
-  
+.swipe-up_open{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,12 +52,26 @@ html{
   margin: auto;
   left: 0;
   right: 0;
-  width: 50%;
-  height: 99vh;
+  height: 100vh;
+  width: 100%;
+  font-size: 0;
   bottom: 0;
-  border-radius: 36px;
   background: #F2D0A7;
+  transition-duration: 1s;
 }
+
+.bgMenu {
+  position: absolute;
+  z-index: 1;
+  background-color: #F2D0A7;
+}
+
+.category {
+  position: absolute;
+  z-index: 2;
+}
+
+
 
 
 
