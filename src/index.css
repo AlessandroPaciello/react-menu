@@ -12,7 +12,6 @@ html{
   overflow: hidden;
 }
 
-
 .backgorund {
   position: relative;
   z-index: 0;
@@ -27,49 +26,30 @@ html{
     top: 10vh;
 }
 
-.swipe-up_closed{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  margin: auto;
-  left: 0;
-  right: 0;
-  height: 6vh;
-  bottom: 10vh;
-  width: 50%;
-  border-radius: 36px;
-  background: #F2D0A7;
-}
-
-.swipe-up_open{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 1;
-  margin: auto;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  width: 100%;
-  font-size: 0;
-  bottom: 0;
-  background: #F2D0A7;
-  transition-duration: 1s;
-}
-
-.bgMenu {
-  position: absolute;
-  z-index: 1;
-  background-color: #F2D0A7;
-}
-
-.category {
+.bgMenu_closed {
   position: absolute;
   z-index: 2;
+  background-color: #F2D0A7;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
 }
+
+.bgMenu_open {
+  position: absolute;
+  z-index: 2;
+  background-color: #F2D0A7;
+  border-radius: 0;
+  transition-duration: 1.5s;
+}
+
+.titolo {
+  position: absolute;
+  z-index: 5;
+}
+
+
+
 
 
 

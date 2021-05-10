@@ -1,19 +1,17 @@
 import React from 'react'
 
-const menu = require('./menu.json')
-
-
-const menuList = [];
-
-
-
+ 
 
 class Category extends React.Component {
     
     render() {
-        menu.category.forEach(element => {return <h1 className='category'>{element.voce1}</h1>
-    });
-        return ""
+        const {state, style} = this.props
+        return (
+            <div>
+                <h1 className="titolo">ciao</h1>
+                <div id="bgMenu" className={state.className} style={style}></div>
+            </div>
+        )
     }
 }
 
