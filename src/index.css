@@ -67,7 +67,7 @@ ul {
   background: #f9d5a9;
   box-shadow:  20px 20px 39px #e0c098,
               -20px -20px 39px #ffeaba;
-  transition-duration: 1s;
+  transition-duration: 1.5s;
 }
 
 .list_open{
@@ -82,7 +82,7 @@ ul {
   background: #f9d5a9;
   box-shadow: inset 20px 20px 39px #e0c098,
               inset -20px -20px 39px #ffeaba;
-  transition-duration: 1s;
+  transition-duration: 1.5s;
   
 }
 

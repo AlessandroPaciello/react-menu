@@ -80,7 +80,7 @@ class Backgorund extends React.Component{
         return (
             <div className='container'>
                 {
-                    openCategory ? <Category state={this.state} style={style}/> : <this.Start />
+                    openCategory ? <Category state={this.state} style={style} /> : <this.Start />
                 }
             </div>
             
