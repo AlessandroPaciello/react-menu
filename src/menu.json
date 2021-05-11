@@ -1,9 +1,24 @@
 {
     "category" : [
-    {"voce1" : "ciao"},
-    {"voce1" : "ciao"},
-    {"voce1" : "ciao"},
-    {"voce1" : "ciao"}
+        {"nameCategory" : "Caffetteria"
+        },
+        {"nameCategory" : "Bibite"
+        },
+        {"nameCategory" : "Pucce"
+        },
+        {"nameCategory" : "Insalate"
+        },
+        {"nameCategory" : "Friselle"
+        },
+        {"nameCategory" : "Food"
+        },
+        {"nameCategory" : "Cocktail"
+        },
+        {"nameCategory" : "Degustazione"
+        },
+        {"nameCategory" : "Vini"
+        }
+        
     ]
     
 

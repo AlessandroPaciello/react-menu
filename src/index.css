@@ -29,7 +29,7 @@ html{
 .bgMenu_closed {
   position: absolute;
   z-index: 2;
-  background-color: #F2D0A7;
+  background-color: #f9d5a9;
   height: 0;
   width: 0;
   border-radius: 50%;
@@ -38,15 +38,70 @@ html{
 .bgMenu_open {
   position: absolute;
   z-index: 2;
-  background-color: #F2D0A7;
+  background-color: #f9d5a9;
   border-radius: 0;
   transition-duration: 1.5s;
 }
 
-.titolo {
-  position: absolute;
-  z-index: 5;
+ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+  overflow: scroll;
 }
+
+.list {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 10vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  text-align: center;
+  list-style: inside;
+  border-radius: 74px;
+  background: #f9d5a9;
+  box-shadow:  20px 20px 39px #e0c098,
+              -20px -20px 39px #ffeaba;
+  transition-duration: 1s;
+}
+
+.list_open{
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+  margin-top: 10vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  text-align: center;
+  list-style: inside;
+  border-radius: 40px;
+  background: #f9d5a9;
+  box-shadow: inset 20px 20px 39px #e0c098,
+              inset -20px -20px 39px #ffeaba;
+  transition-duration: 1s;
+  
+}
+
+.header{
+  position: relative;
+  text-align: center;
+  z-index: 4;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 2vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  border-radius: 74px;
+  background: #f9d5a9;
+  box-shadow: inset 20px 20px 39px #e0c098,
+              inset -20px -20px 39px #ffeaba;
+}
+
+
 
 
 
