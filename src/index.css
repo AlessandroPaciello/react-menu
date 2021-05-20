@@ -48,7 +48,7 @@ html{
 ul {
   margin: 0;
   padding: 0;
-  padding-top: 10vh;
+  padding-top: 3vh;
   position: relative;
   flex-direction: column;
   z-index: 3;
@@ -59,10 +59,12 @@ ul {
 }
 
 .list {
+  position: relative;
   width: 80%;
   padding-top: 2vh;
   padding-bottom: 2vh;
   margin-top: 10vh;
+  margin-bottom: 5vh;
   margin-left: 5vh;
   margin-right: 5vh;
   text-align: center;
@@ -87,6 +89,11 @@ ul {
               inset -20px -20px 39px #ffeaba;
 }
 
+.hidden{
+  display: none;
+}
+
+
 .header{
   position: absolute;
   text-align: center;
@@ -110,13 +117,6 @@ ul {
 }
 
 
-
-.page{
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-}
-
 .list[data-scroll] {
   transition: all 1s;
 }
@@ -130,6 +130,7 @@ ul {
 .list_open[data-scroll] {
   transition: all 1s;
 }
+
 
 
 

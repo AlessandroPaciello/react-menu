@@ -7,23 +7,24 @@ const menu = require('./menu.json')
 class Category extends React.Component {
     
     state = {
-        drag : false,
+        drag: false,
+        list_open: false
     }
 
     Openlist = (e) => {
 
-        const {drag} = this.state
+        const {drag, list_open} = this.state
         if(!drag) {
-            if(e.target.className === 'list')
-            {
-                e.target.classList.add('list_open')
-                e.target.classList.remove('list')
-            }
-            else if(e.target.className === 'list_open')
-            {
-                e.target.classList.add('list')
-                e.target.classList.remove('list_open')
-            }
+            let list = document.getElementById('list').childNodes
+
+            list.forEach(el => {
+                if(e.target === el) {
+                    e.target.classList.toggle('list_open')
+                }
+                else {
+                    el.classList.toggle('hidden')
+                }
+            })
         }
     }
 
