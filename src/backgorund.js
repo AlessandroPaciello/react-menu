@@ -25,7 +25,8 @@ class Backgorund extends React.Component{
             this.setState({
                 x: parseFloat(touchX.toFixed(2)),
                 y: parseFloat(touchY.toFixed(2)),
-                open: true
+                open: true,
+                action : true
             })
             setTimeout(()=> {
                 this.setState({
@@ -78,7 +79,7 @@ class Backgorund extends React.Component{
         }
         
         return (
-            <div className='container'>
+            <div >
                 {
                     openCategory ? <Category state={this.state} style={style} /> : <this.Start />
                 }

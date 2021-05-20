@@ -37,6 +37,8 @@ html{
 
 .bgMenu_open {
   position: absolute;
+  height: 100vh;
+  width: 100vh;
   z-index: 2;
   background-color: #f9d5a9;
   border-radius: 0;
@@ -46,16 +48,18 @@ html{
 ul {
   margin: 0;
   padding: 0;
+  padding-top: 10vh;
   position: relative;
-  display: flex;
   flex-direction: column;
   z-index: 3;
   height: 100vh;
   width: 100%;
   overflow: scroll;
+  z-index: 3;
 }
 
 .list {
+  width: 80%;
   padding-top: 2vh;
   padding-bottom: 2vh;
   margin-top: 10vh;
@@ -67,7 +71,6 @@ ul {
   background: #f9d5a9;
   box-shadow:  20px 20px 39px #e0c098,
               -20px -20px 39px #ffeaba;
-  transition-duration: 1.5s;
 }
 
 .list_open{
@@ -82,16 +85,15 @@ ul {
   background: #f9d5a9;
   box-shadow: inset 20px 20px 39px #e0c098,
               inset -20px -20px 39px #ffeaba;
-  transition-duration: 1.5s;
-  
 }
 
 .header{
-  position: relative;
+  position: absolute;
   text-align: center;
   z-index: 4;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  width: 80%;
   margin-top: 2vh;
   margin-left: 5vh;
   margin-right: 5vh;
@@ -101,12 +103,33 @@ ul {
               inset -20px -20px 39px #ffeaba;
 }
 
+.scroll-target{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
 
 
 
+.page{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
 
+.list[data-scroll] {
+  transition: all 1s;
+}
+.list[data-scroll="in"] {
+  opacity: 1;
+}
+.list[data-scroll="out"] {
+  opacity: 0;
+}
 
-
+.list_open[data-scroll] {
+  transition: all 1s;
+}
 
 
 
