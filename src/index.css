@@ -8,9 +8,7 @@ body {
   overflow: hidden;
 }
 
-html{
-  overflow: hidden;
-}
+
 
 .backgorund {
   position: relative;
@@ -118,13 +116,11 @@ ul {
 
 
 .list[data-scroll] {
+  transition: all .5s;
+}
+
+.hidden[data-scroll] {
   transition: all 1s;
-}
-.list[data-scroll="in"] {
-  opacity: 1;
-}
-.list[data-scroll="out"] {
-  opacity: 0;
 }
 
 .list_open[data-scroll] {

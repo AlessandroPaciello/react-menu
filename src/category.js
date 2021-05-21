@@ -20,9 +20,11 @@ class Category extends React.Component {
             list.forEach(el => {
                 if(e.target === el) {
                     e.target.classList.toggle('list_open')
+                    e.target.focus()
                 }
                 else {
                     el.classList.toggle('hidden')
+                    el.classList.toggle('list')
                 }
             })
         }
@@ -44,6 +46,10 @@ class Category extends React.Component {
         ScrollOut({
             scrollingElement: ".scrollable-pane",
             threshold: 0.95,
+            onShown: function(el) {
+                // use the web animation API
+                el.animate([{ opacity: 0 }, { opacity: 1 }], 500);
+              },
         })
     }
 
@@ -54,13 +60,9 @@ class Category extends React.Component {
         
         let element = menu.category.map((ob, index) => {
             return (
-                <div data-scroll
-                    key={"element" + index} 
-                    id={"element" + index} 
-                    className='list' 
-                    onTouchEnd={e => this.Openlist(e)}>
-                    {ob.nameCategory} 
-                </div>
+                <li data-scroll key={"element" + index} id={"element" + index} className='list' onTouchEnd={e => this.Openlist(e)}>
+                    <a href={'/#element' + index}>{ob.nameCategory} </a>
+                </li>
                 ) 
         })
         
