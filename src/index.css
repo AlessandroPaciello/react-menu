@@ -40,10 +40,11 @@ body {
   z-index: 2;
   background-color: #f9d5a9;
   border-radius: 0;
-  transition-duration: 1.5s;
+  transition-duration: .7s;
 }
 
 ul {
+  
   margin: 0;
   padding: 0;
   padding-top: 3vh;
@@ -71,6 +72,7 @@ ul {
   background: #f9d5a9;
   box-shadow:  20px 20px 39px #e0c098,
               -20px -20px 39px #ffeaba;
+              transition: all 1s;
 }
 
 .list_open{
@@ -85,11 +87,9 @@ ul {
   background: #f9d5a9;
   box-shadow: inset 20px 20px 39px #e0c098,
               inset -20px -20px 39px #ffeaba;
+              transition: all 1s;
 }
 
-.hidden{
-  display: none;
-}
 
 
 .header{
@@ -113,19 +113,14 @@ ul {
   height: 100vh;
   width: 100%;
 }
-
-
+/*
 .list[data-scroll] {
   transition: all .5s;
 }
-
-.hidden[data-scroll] {
-  transition: all 1s;
-}
-
 .list_open[data-scroll] {
   transition: all 1s;
 }
+*/
 
 
 

@@ -1,30 +1,30 @@
 import React from 'react'
 import Header from './header'
+import 'animate.css'
 import ScrollOut from "scroll-out"
+
 
 const menu = require('./menu.json')
 
 class Category extends React.Component {
     
     state = {
-        drag: false,
-        list_open: false
+        drag: false
     }
 
     Openlist = (e) => {
 
-        const {drag, list_open} = this.state
+        const {drag} = this.state
         if(!drag) {
             let list = document.getElementById('list').childNodes
 
             list.forEach(el => {
                 if(e.target === el) {
                     e.target.classList.toggle('list_open')
-                    e.target.focus()
                 }
                 else {
-                    el.classList.toggle('hidden')
-                    el.classList.toggle('list')
+                    el.classList.toggle('animate__zoomOutLeft')
+                    el.classList.toggle('animate__zoomIn')
                 }
             })
         }
@@ -60,9 +60,9 @@ class Category extends React.Component {
         
         let element = menu.category.map((ob, index) => {
             return (
-                <li data-scroll key={"element" + index} id={"element" + index} className='list' onTouchEnd={e => this.Openlist(e)}>
-                    <a href={'/#element' + index}>{ob.nameCategory} </a>
-                </li>
+                <div data-scroll key={"element" + index} id={"element" + index} className='list animate__animated animate__zoomIn' onTouchEnd={e => this.Openlist(e)}>
+                    {ob.nameCategory}
+                </div>
                 ) 
         })
         
