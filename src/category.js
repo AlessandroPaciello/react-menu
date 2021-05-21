@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './header'
 import 'animate.css'
-import ScrollOut from "scroll-out"
 
 
 const menu = require('./menu.json')
@@ -43,6 +42,7 @@ class Category extends React.Component {
     }
 
     componentDidMount() {
+        /*
         ScrollOut({
             scrollingElement: ".scrollable-pane",
             threshold: 0.95,
@@ -51,6 +51,7 @@ class Category extends React.Component {
                 el.animate([{ opacity: 0 }, { opacity: 1 }], 500);
               },
         })
+        */
     }
 
     render() {
@@ -60,7 +61,7 @@ class Category extends React.Component {
         
         let element = menu.category.map((ob, index) => {
             return (
-                <div data-scroll key={"element" + index} id={"element" + index} className='list animate__animated animate__zoomIn' onTouchEnd={e => this.Openlist(e)}>
+                <div key={"element" + index} id={"element" + index} className='list animate__animated animate__zoomIn' onTouchEnd={e => this.Openlist(e)}>
                     {ob.nameCategory}
                 </div>
                 ) 
