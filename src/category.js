@@ -1,31 +1,36 @@
 import React from 'react'
+import Menu from './menu'
 import Header from './header'
-import 'animate.css'
-
 
 const menu = require('./menu.json')
 
 class Category extends React.Component {
     
     state = {
-        drag: false
+        drag: false,
+        index: null,
+        category: null,
+        active: false
     }
 
     Openlist = (e) => {
 
         const {drag} = this.state
         if(!drag) {
-            let list = document.getElementById('list').childNodes
-
-            list.forEach(el => {
-                if(e.target === el) {
-                    e.target.classList.toggle('list_open')
-                }
-                else {
-                    el.classList.toggle('animate__zoomOutLeft')
-                    el.classList.toggle('animate__zoomIn')
-                }
+            let list_category = document.getElementById('list')
+            let list_menu = document.getElementById('menu')
+            e.target.classList.toggle('active')
+            list_menu.classList.toggle('menu_closed')
+            list_menu.classList.toggle('menu_open')
+            this.setState({
+                index: parseInt(e.target.getAttribute('index')),
+                category: e.target.getAttribute('category'),
+                active: true
             })
+            setTimeout(() =>{
+                list_menu.classList.toggle('translate')
+                list_category.classList.toggle('translate')
+            },200)
         }
     }
 
@@ -42,26 +47,16 @@ class Category extends React.Component {
     }
 
     componentDidMount() {
-        /*
-        ScrollOut({
-            scrollingElement: ".scrollable-pane",
-            threshold: 0.95,
-            onShown: function(el) {
-                // use the web animation API
-                el.animate([{ opacity: 0 }, { opacity: 1 }], 500);
-              },
-        })
-        */
     }
 
     render() {
 
         const {state, style} = this.props
-
+        const {index, active} = this.state
         
         let element = menu.category.map((ob, index) => {
             return (
-                <div key={"element" + index} id={"element" + index} className='list animate__animated animate__zoomIn' onTouchEnd={e => this.Openlist(e)}>
+                <div key={"element" + index} index={index} id={"element" + index} className='list animate__animated animate__zoomIn' onTouchEnd={e => this.Openlist(e)}>
                     {ob.nameCategory}
                 </div>
                 ) 
@@ -71,12 +66,13 @@ class Category extends React.Component {
             <div>
                 <Header />
                 <div className='page'>
-                    
-                        <ul id={"list"} className='scrollable-pane' onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
-                            {element}
-                        </ul>
+                    <Menu index={index}/>
+                    <ul id={"list"} className='scrollable-pane' onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
+                        {element}
+                    </ul>
                     <div id="bgMenu" className={state.className} style={style}></div>
                 </div>
+                
             </div>
         )
     }

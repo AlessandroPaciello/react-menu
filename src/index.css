@@ -8,6 +8,10 @@ body {
   overflow: hidden;
 }
 
+html {
+  overflow: hidden;
+}
+
 .backgorund {
   position: relative;
   z-index: 0;
@@ -42,6 +46,7 @@ body {
 }
 
 ul {
+  right: 0;
   margin: 0;
   padding: 0;
   padding-top: 3vh;
@@ -54,7 +59,12 @@ ul {
   z-index: 3;
 }
 
-.list {
+ul.translate{
+  right: 100%;
+  transition: all 1s;
+}
+
+div.list {
   position: relative;
   width: 80%;
   padding-top: 2vh;
@@ -69,48 +79,83 @@ ul {
   background: #f9d5a9;
   box-shadow:  20px 20px 39px #e0c098,
               -20px -20px 39px #ffeaba;
-              transition: all 1s;
+  transition: all 1s;
 }
 
-.list_open{
-  padding-top: 40vh;
-  padding-bottom: 40vh;
-  margin-top: 10vh;
-  margin-left: 5vh;
-  margin-right: 5vh;
-  text-align: center;
-  list-style: inside;
-  border-radius: 40px;
-  background: #f9d5a9;
-  box-shadow: inset 20px 20px 39px #e0c098,
-              inset -20px -20px 39px #ffeaba;
-              transition: all 1s;
-}
-
-.header{
-  position: absolute;
-  text-align: center;
-  z-index: 4;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  width: 80%;
-  margin-top: 2vh;
-  margin-left: 5vh;
-  margin-right: 5vh;
+div.active {
   border-radius: 74px;
   background: #f9d5a9;
   box-shadow: inset 20px 20px 39px #e0c098,
               inset -20px -20px 39px #ffeaba;
+              transition: all .2s;
 }
 
-/*
-.list[data-scroll] {
-  transition: all .5s;
+.header{
+  position: absolute;
+  z-index: 4;
+  margin: 0;
+  padding: 0;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 100%;
+  background: #f9d5a9;
+  box-shadow: inset 20px 20px 39px #e0c098,
+              inset -20px -20px 39px #ffeaba;
 }
-.list_open[data-scroll] {
+
+div.menu_open {
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  margin-left: 2.5vh;
+  height: 80vh;
+  width: 90%;
+  left: 100%;
+  border-radius: 30px;
+  background: #f9d5a9;
+  box-shadow: inset 20px 20px 39px #e0c098,
+              inset -20px -20px 39px #ffeaba;
+}
+
+div.translate{
+  left: 0;
   transition: all 1s;
 }
-*/
+
+li.menu_list{
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  text-align: center;
+  list-style: inside;
+}
+
+img.logo_header{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-left: 25%;
+}
+
+img.scritta_header{
+  position: absolute;
+  padding-top: 2vh;
+  padding-left: 3vh;
+}
+div.menu_closed {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 
 
 

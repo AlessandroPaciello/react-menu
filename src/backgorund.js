@@ -41,7 +41,7 @@ class Backgorund extends React.Component{
                 this.setState({
                     openCategory : true
                 })
-            }, 1500)
+            }, 800)
         }
     }
     

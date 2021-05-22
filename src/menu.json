@@ -1,22 +1,31 @@
 {
     "category" : [
-        {"nameCategory" : "Caffetteria"
+        {"nameCategory" : "Caffetteria",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         },
-        {"nameCategory" : "Bibite"
+        {"nameCategory" : "Bibite",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         },
-        {"nameCategory" : "Pucce"
+        {"nameCategory" : "Pucce",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         },
-        {"nameCategory" : "Insalate"
+        {"nameCategory" : "Insalate",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         },
-        {"nameCategory" : "Friselle"
+        {"nameCategory" : "Friselle",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         },
-        {"nameCategory" : "Food"
+        {"nameCategory" : "Food",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         },
-        {"nameCategory" : "Cocktail"
+        {"nameCategory" : "Cocktail",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         },
-        {"nameCategory" : "Degustazione"
+        {"nameCategory" : "Degustazione",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         },
-        {"nameCategory" : "Vini"
+        {"nameCategory" : "Vini",
+            "menu" : [1,2,3,4,5,6,7,8,9,10]
         }
         
     ]
