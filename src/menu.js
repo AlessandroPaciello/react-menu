@@ -15,13 +15,13 @@ class Menu extends React.Component {
             return <ul className='menu'>{menu_list}</ul>
         }
         else{
-            return <div></div>
+            return <div ></div>
         }
     }
 
     render() {
 
-        return <div id='menu' className='menu_closed'>
+        return <div id='menu' className='menu'>
                 <this.LoadMenu />
                </div>
     }
