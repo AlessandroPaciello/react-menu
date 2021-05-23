@@ -1,4 +1,4 @@
-body {
+* body {
   margin:0;
   font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
   -webkit-font-smoothing:antialiased;
@@ -53,8 +53,25 @@ body {
   z-index:3;
   height:100vh;
   width:100%;
-  overflow:scroll;
+  overflow-y: scroll;
   z-index:3;
+  }
+
+  ul.menu{
+  margin:0;
+  padding:0;
+  position:relative;
+  flex-direction:column;
+  z-index:3;
+  height:80vh;
+  width: 90%;
+  margin-left: 2.5vh;
+  margin-right: 2.5vh;
+  overflow-y: scroll;
+  z-index:3;
+  border-radius:30px;
+  background:#f9d5a9;
+  box-shadow:inset 20px 20px 39px #e0c098,inset -20px -20px 39px #ffeaba;
   }
 
   ul.slide{
@@ -84,6 +101,10 @@ body {
       transform: translateX(-100%)
     }
   }
+
+  div.page{
+    overflow: hidden;
+  }
   
   div.list {
   position:relative;
@@ -95,7 +116,6 @@ body {
   border-radius:74px;
   background:#f9d5a9;
   box-shadow:20px 20px 39px #e0c098,-20px -20px 39px #ffeaba;
-  transition:all 1s;
   margin:10vh 5vh 5vh;
   }
   
@@ -126,13 +146,9 @@ body {
   padding:0;
   margin-top:15vh;
   margin-bottom:5vh;
-  margin-left: -2.5vh;
   height:80vh;
-  width:90%;
+  width:100%;
   left:100%;
-  border-radius:30px;
-  background:#f9d5a9;
-  box-shadow:inset 20px 20px 39px #e0c098,inset -20px -20px 39px #ffeaba;
   }
   
   li.menu_list {

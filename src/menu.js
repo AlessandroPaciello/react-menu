@@ -12,7 +12,7 @@ class Menu extends React.Component {
                return (<li key={index} className='menu_list'>{ob}</li>)
             })
 
-            return <ul>{menu_list}</ul>
+            return <ul className='menu'>{menu_list}</ul>
         }
         else{
             return <div></div>
