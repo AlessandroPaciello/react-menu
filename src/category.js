@@ -16,20 +16,25 @@ class Category extends React.Component {
     Openlist = (e) => {
 
         const {drag} = this.state
+
         if(!drag) {
             let list_category = document.getElementById('list')
             let list_menu = document.getElementById('menu')
+
             e.target.classList.toggle('active')
+
             list_menu.classList.toggle('menu_closed')
             list_menu.classList.toggle('menu_open')
+        
             this.setState({
                 index: parseInt(e.target.getAttribute('index')),
                 category: e.target.getAttribute('category'),
                 active: true
             })
+
             setTimeout(() =>{
-                list_menu.classList.toggle('translate')
-                list_category.classList.toggle('translate')
+                list_menu.classList.toggle('slide')
+                list_category.classList.toggle('slide')
             },200)
         }
     }
@@ -52,11 +57,11 @@ class Category extends React.Component {
     render() {
 
         const {state, style} = this.props
-        const {index, active} = this.state
+        const {index} = this.state
         
         let element = menu.category.map((ob, index) => {
             return (
-                <div key={"element" + index} index={index} id={"element" + index} className='list animate__animated animate__zoomIn' onTouchEnd={e => this.Openlist(e)}>
+                <div key={"element" + index} index={index} id={"element" + index} className='list' onTouchEnd={e => this.Openlist(e)}>
                     {ob.nameCategory}
                 </div>
                 ) 
@@ -67,7 +72,7 @@ class Category extends React.Component {
                 <Header />
                 <div className='page'>
                     <Menu index={index}/>
-                    <ul id={"list"} className='scrollable-pane' onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
+                    <ul id={"list"} onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
                         {element}
                     </ul>
                     <div id="bgMenu" className={state.className} style={style}></div>
