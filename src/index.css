@@ -9,7 +9,6 @@
   -moz-osx-font-smoothing:grayscale;
   overflow:hidden;
   display: block;
-  position: fixed;
   }
 
   html {
@@ -150,7 +149,7 @@
     position:relative;
     flex-direction:column;
     z-index:3;
-    height:100vh;
+    height:90vh;
     width:100%;
     overflow-y: scroll;
     z-index:3;
@@ -162,7 +161,7 @@
     position:relative;
     flex-direction:column;
     z-index:3;
-    height:80vh;
+    height:75vh;
     width: 90%;
     margin-left: 2.5vh;
     margin-right: 2.5vh;
@@ -261,7 +260,6 @@
   @keyframes closed_button {
     from{
       padding: 3.5vh;
-      background-image: url('./img/left-arrow.svg');
       background-size: 3vh;
       background-repeat: no-repeat;
       background-position: center;
