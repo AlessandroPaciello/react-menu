@@ -142,6 +142,7 @@
   }
 
   ul {
+    list-style: none;
     right:0;
     margin:0;
     padding:0;
@@ -156,6 +157,7 @@
     }
   
     ul.menu{
+    list-style-type: none;
     margin:0;
     padding:0;
     position:relative;
@@ -177,7 +179,6 @@
   
   div.menu{
   position:absolute;
-  text-align:center;
   z-index:3;
   margin:0;
   padding:0;
@@ -189,11 +190,25 @@
   }
 
   li.menu_list {
-  padding-top:2vh;
+  position: relative;
+  font-size: 14px;
   padding-bottom:2vh;
-  text-align:center;
-  list-style:inside;
-  margin:10vh 5vh 5vh;
+  width: 100%;
+  }
+
+  div.menu_name{
+    position: relative;
+    margin-left: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 60%;
+  }
+
+  div.menu_price{
+    position: relative;
+    margin-top: -5vh;
+    width: 20%;
+    float: right;
   }
 
 
@@ -268,6 +283,10 @@
     to{
       padding: 0;
     }
+  }
+ 
+  .animate__zoomIn.animate__animated{
+    --animate-duration: .3s;
   }
 
   
