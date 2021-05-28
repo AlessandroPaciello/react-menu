@@ -24,12 +24,12 @@ class Menu extends React.Component {
         if(index !== null){
 
             return (
-                <ul id='menu' className='menu'>
+                <ul className='menu'>
                     <this.NameMenu />
                 </ul>)
         }
         else{
-            return <div ></div>
+            return <ul className='menu'></ul>
         }
     }
 

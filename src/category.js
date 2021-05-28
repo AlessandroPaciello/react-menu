@@ -32,8 +32,6 @@ class Category extends React.Component {
                 category: e.target.getAttribute('category'),
             })
 
-            let menu = document.getElementById('menu')
-            menu.scrollTop = 1
 
             setTimeout(() =>{
                 if(active) {
@@ -68,16 +66,7 @@ class Category extends React.Component {
         })
     }
 
-    componentDidMount() {
-        ScrollOut({
-            scrollingElement: ".scrollable-pane",
-            onShown: function(el) {
-                el.classList.add("animate__zoomIn");
-              },
-              onHidden: function(el) {
-                el.classList.remove("animate__zoomIn");
-              }
-          });
+    componentDidMount() { 
     }
 
     render() {
@@ -98,7 +87,7 @@ class Category extends React.Component {
                 <Header active={this.Active}/>
                 <div className='page'>
                     <Menu index={index}/>
-                    <ul id={"list"} className='scrollable-pane' onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
+                    <ul id={"list"}  onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
                         {element}
                     </ul>
                     <div id="bgMenu" className={state.className} style={style}></div>

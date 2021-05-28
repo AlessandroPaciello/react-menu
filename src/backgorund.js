@@ -61,7 +61,7 @@ class Backgorund extends React.Component{
             <div onTouchStart={(e)=>this.StartOpen(e)}>
                 <img className='logo' src={logo} alt='logo'/>
                 <div id="bgMenu" className={className} style={style}></div>
-                <img className='backgorund' height={window.screen.height} src={backgorund} alt='background'/>
+                <img className='backgorund' src={backgorund} alt='background'/>
             </div>
         )
         
