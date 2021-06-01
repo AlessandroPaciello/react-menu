@@ -58,13 +58,13 @@ class Backgorund extends React.Component{
         }
         
         return(
-            <div onTouchStart={(e)=>this.StartOpen(e)}>
+            <div className="homePage" onTouchStart={(e)=>this.StartOpen(e)}>
                 <div className="elementHome">
                     <img className='logo' src={logo} alt='logo'/>
-                    <h2 id="textMenu">Tocca sullo shcermo per accedere al menù</h2>
+                    <h2 id="textMenu">Tocca sullo shcermo</h2>
                 </div>
                 <div id="bgMenu" className={className} style={style}></div>
-                <img className='backgorund' src={backgorund} alt='background'/>
+                <div className='backgorund'></div>
                 
             </div>
         )
@@ -83,7 +83,7 @@ class Backgorund extends React.Component{
         }
         
         return (
-            <div >
+            <div>
                 {
                     openCategory ? <Category state={this.state} style={style} /> : <this.Start />
                 }

@@ -7,9 +7,7 @@ import Backgorund from './backgorund'
 
 class App extends React.Component {
   render() {
-    return(
-      <Backgorund/>
-    ) 
+    return <Backgorund/>
   }
 }
 ReactDOM.render(
