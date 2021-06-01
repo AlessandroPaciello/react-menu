@@ -1,5 +1,4 @@
 * body {
-  
   height: 100vh;
   width: 100%;
   margin:0;
@@ -119,7 +118,7 @@
 
   /* list category */
 
-  div.list {
+  div#category {
   position:relative;
   width:80%;
   padding-top:2vh;
@@ -132,6 +131,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 10vh;
+  margin-bottom: 10vh;
   }
   
   div.active {
@@ -141,18 +141,17 @@
   transition: box-shadow .2s;
   }
 
-  ul {
+  ul#list {
     list-style: none;
     right:0;
     margin:0;
     padding:0;
     padding-top:3vh;
     position:relative;
-    height:90vh;
+    height:100vh;
     width:100%;
     overflow-y: scroll;
     z-index:3;
-    
     }
 
   /*menu */
@@ -166,6 +165,7 @@
   margin-bottom:5vh;
   width:100%;
   left: 100%;
+  position: fixed;
   }
 
   ul.menu{
