@@ -7,7 +7,9 @@
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   overflow:hidden;
+  min-height : 100vh;
   }
+
 
   html {
     margin:0;
@@ -15,6 +17,12 @@
     height: 100vh;
     width: 100%;
     overflow:hidden;
+  }
+
+  div.page{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
   }
   
   /* home page */
@@ -95,7 +103,6 @@
   div.slide{
     animation: slideMenu 1s;
     animation-fill-mode: forwards;
-    
   }
 
   div.slide_reverse{
@@ -164,7 +171,7 @@
   box-shadow:20px 20px 39px #e0c098,-20px -20px 39px #ffeaba;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
   }
   
@@ -176,13 +183,12 @@
   }
 
   ul#list {
+    position:relative;
     list-style: none;
     right:0;
     margin:0;
     padding:0;
-    padding-top:3vh;
-    position:relative;
-    height:100vh;
+    height:95vh;
     width:100%;
     overflow-y: scroll;
     z-index:3;
@@ -191,12 +197,11 @@
   /*menu */
   
   div.menu{
-  position:absolute;
+  position:relative;
   z-index:3;
   margin:0;
   padding:0;
-  margin-top:15vh;
-  margin-bottom:5vh;
+  height: 95vh;
   width:100%;
   left: 100%;
   position: fixed;
@@ -206,7 +211,7 @@
     position: relative;
     padding: 0;
     z-index:3;
-    height:75vh;
+    height: 90%;
     width: 90%;
     overflow-y: scroll;
     border-radius:30px;
@@ -246,26 +251,33 @@
   /* header */
 
   .header {
-    position:absolute;
+    position: relative;
+    height: 10vh;
     z-index:4;
     margin:0;
     padding:0;
-    padding-top:2vh;
-    padding-bottom:2vh;
     width:100%;
     background:#f9d5a9;
     box-shadow:inset 20px 20px 39px #e0c098,inset -20px -20px 39px #ffeaba;
   }
 
+  .box_logo{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   img.logo_header {
   position:relative;
+  height: 70%;
   margin:0;
   padding:0;
-  margin-left:25%;
   }
   
   img.scritta_header {
-  position:absolute;
+  position:relative;
   padding-top:2vh;
   padding-left:3vh;
   }
@@ -274,6 +286,7 @@
     position: absolute;
     margin:0;
     padding: 0;
+    margin-top: 1.75vh;
     margin-left: 3vh;
     border-radius: 50px;
     background:#f9d5a9;
@@ -295,7 +308,7 @@
       padding: 0;
     }
     to{
-      padding: 3.5vh;
+      padding: 3vh;
       background-image: url('./img/left-arrow.svg');
       background-size: 3vh;
       background-repeat: no-repeat;

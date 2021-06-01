@@ -29,10 +29,11 @@ class Header extends React.Component {
     render() {
 
         return <header id={"header"} className="header">
-                    <div id='button_category' className='button_category' onTouchEnd={() => {this.GoBack()}}>
+                    <div id='button_category' className='button_category' onTouchEnd={() => {this.GoBack()}}></div>
+                    <div className="box_logo">
+                        <img className='logo_header' src={Logo}></img>
+                        <img className='scritta_header' src={Scritta}></img>
                     </div>
-                    <img className='logo_header' src={Logo}></img>
-                    <img className='scritta_header' src={Scritta}></img>
                 </header>
     }
 }

@@ -84,8 +84,9 @@ class Category extends React.Component {
         
         return (
             <div>
-                <Header active={this.Active}/>
+                
                 <div className='page'>
+                    <Header active={this.Active}/>
                     <Menu index={index}/>
                     <ul id={"list"}  onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
                         {element}
