@@ -19,21 +19,44 @@
   
   /* home page */
 
+  .elementHome{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #textMenu{
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 80%;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 34px;
+    color: #bf4011;
+  }
+  .logo {
+    position:relative;
+    z-index:1;
+    height: 45vh;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    top:10vh;
+    display: block;
+    }
+
   .backgorund {
-  position:relative;
+  position:absolute;
   z-index:0;
   height: 100vh;
   width: 100%;
   }
   
-  .logo {
-  position:absolute;
-  z-index:1;
-  margin:auto;
-  left:0;
-  right:0;
-  top:10vh;
-  }
+  
   
   .bgMenu_closed {
   position:absolute;
@@ -185,13 +208,15 @@
   li.menu_list {
   position: relative;
   display: flex;
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom:2vh;
   margin-top: 2vh;
   margin-bottom: 2vh;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  font-family: 'Roboto', sans-serif;
+  
   }
 
   div.menu_name{

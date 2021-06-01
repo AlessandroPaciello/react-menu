@@ -32,8 +32,8 @@ class Backgorund extends React.Component{
                 this.setState({
                     x: 0,
                     y: 0,
-                    height: window.screen.height,
-                    width: window.screen.width,
+                    height: "100vh",
+                    width: "100%",
                     className: "bgMenu_open"
                 })
             }, 200)
@@ -59,9 +59,13 @@ class Backgorund extends React.Component{
         
         return(
             <div onTouchStart={(e)=>this.StartOpen(e)}>
-                <img className='logo' src={logo} alt='logo'/>
+                <div className="elementHome">
+                    <img className='logo' src={logo} alt='logo'/>
+                    <h2 id="textMenu">Tocca sullo shcermo per accedere al menù</h2>
+                </div>
                 <div id="bgMenu" className={className} style={style}></div>
                 <img className='backgorund' src={backgorund} alt='background'/>
+                
             </div>
         )
         
