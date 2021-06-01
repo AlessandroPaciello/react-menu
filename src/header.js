@@ -10,7 +10,7 @@ class Header extends React.Component {
         let list_category = document.getElementById('list')
         let list_menu = document.getElementById('menu')
         let button = document.getElementById('button_category')
-
+        
         button.classList.toggle('open')
         button.classList.toggle('closed')
 
@@ -19,7 +19,7 @@ class Header extends React.Component {
             list_category.classList.toggle('slide')
             list_menu.classList.toggle('slide_reverse')
             list_category.classList.toggle('slide_reverse')
-        
+            document.getElementById("ul_menu").scrollTop = 0;
             active()
         },200)
     }
