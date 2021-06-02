@@ -115,6 +115,19 @@
                 "7,00€",
                 "6,00€",
                 "7,00€"
+            ], "Description" : [
+                "",
+                "Pomodoro, mozzarella, rucola",
+                "Pomodoro, mozzarella, crudo, insalata",
+                "Pomodoro, formaggio, cotto, insalata",
+                "Hamburger di Bovino 150g. insalata, pomodoro, formaggio, salse",
+                "Hamburger di Bovino 300g. insalata, pomodoro, formaggio, salse",
+                "Pomodoro, formaggio, funghi, salame, insalata",
+                "Pomodoro, mozzarella, bresaola, funghi, rucola",
+                "Pomodoro, mozzarella, melanzane, carciofi, pomodori secchi, rucola",
+                "Kebab di tacchino 100% italiano, ins. pom. form., funghi, maionese",
+                "Pomodoro, mozzarella, tonno, insalata",
+                "Pomodoro, mozzarella, salmone affumicato, insalata"
             ]}
         },
         {"nameCategory" : "Insalate",

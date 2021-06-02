@@ -3,7 +3,7 @@
   width: 100%;
   margin:0;
   padding: 0;
-  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   overflow:hidden;
@@ -40,19 +40,20 @@
     text-align: center;
     z-index: 1;
     width: 70%;
-    margin-top: 15vh;
+    margin-top: 13vh;
     margin-left: auto;
     margin-right: auto;
     font-size: 34px;
     color: #bf4011;
     animation: zoom-text 4s;
     animation-iteration-count: infinite;
+    font-family: 'Parisienne', cursive;
   }
 
   @keyframes zoom-text {
-    0%{font-size: 34px;}
-    50%{font-size: 38px;}
-    100%{font-size: 34px;}
+    0%{font-size: 38px;}
+    50%{font-size: 42px;}
+    100%{font-size: 38px;}
   }
 
   .logo {
@@ -221,32 +222,52 @@
     margin-right: auto;
     }
 
+  li.menu_list_description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    padding-bottom:2vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+  }
+
   li.menu_list {
   position: relative;
   display: flex;
   font-size: 16px;
   padding-bottom:2vh;
-  margin-top: 2vh;
+  margin-top: 4vh;
   margin-bottom: 2vh;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  font-family: 'Roboto', sans-serif;
-  
+  width: 90%;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
   }
 
   div.menu_name{
     position: relative;
-    width: 60%;
+    width: 100%;
   }
 
   div.menu_price{
     position: relative;
     text-align: right;
-    width: 40%;
+    align-self: flex-end;
+    width: 25%;
     float: right;
   }
-
+  div.description_menu{
+    position: relative;
+    width: 80%;
+    font-size: 14px;
+  }
 
   /* header */
 
