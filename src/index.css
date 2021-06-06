@@ -237,7 +237,7 @@
     color: black;
   }
 
-  li.menu_list {
+  li.menu_list{
   position: relative;
   display: flex;
   font-size: 16px;
@@ -251,16 +251,23 @@
   color: black;
   }
 
-  div.menu_name{
+  div.text-list{
+    display: flex;
+    flex-direction: row;
     position: relative;
     width: 100%;
+  }
+
+  div.menu_name{
+    position: relative;
+    width: 80%;
   }
 
   div.menu_price{
     position: relative;
     text-align: right;
     align-self: flex-end;
-    width: 25%;
+    width: 20%;
     float: right;
   }
   div.description_menu{

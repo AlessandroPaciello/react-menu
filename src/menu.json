@@ -131,22 +131,304 @@
             ]}
         },
         {"nameCategory" : "Insalate",
-            "menu" : {"name": [1,2,3,4,5,6,7,8,9,10], "price": [1,2,3,4,5,6,7,8,9,10]} 
+            "menu" : {"name": [
+                "ORTE",
+                "FASCIO",
+                "MOLO",
+                "STAFFA",
+                "PORTO"
+            ],
+             "price": [
+                 "7,00€",
+                 "7,00€",
+                 "7,00€",
+                 "7,00€",
+                 "7,00€"
+            ],
+              "Description": [
+                  "Insalata, pomodoro, mozzarella, rucola",
+                  "Insalata, pomodoro, mais, salmone affumicato",
+                  "Insalata, pom., cocomero, cipolla di Tropea, mozzarella",
+                  "Insalata, pomodoro, mozzarella, mais, tonno",
+                  "Insalata, pomodoro, noci e grana padano"
+              ]} 
         },
         {"nameCategory" : "Friselle",
-            "menu" : {"name": [1,2,3,4,5,6,7,8,9,10], "price": [1,2,3,4,5,6,7,8,9,10]}
+            "menu" : {"name": [
+                "PUNTI CARDINALI",
+                "NORD",
+                "SUD",
+                "EST",
+                "OVEST",
+                "FARO PALASCIA"
+            ], "price": [
+                "5,00€",
+                "7,00€",
+                "6,00€",
+                "6,00€",
+                "7,00€",
+                "7,00€"
+            ],
+            "Description": [
+                 "Pomodoro, sale olio, origano",
+                 "Pomodoro, melanzane, pomodorini secchi",
+                 "Pomodoro, staccaitella",
+                 "Pomodoro, mozzarella, tonno",
+                 "Pomodoro, mozzarella, crudo",
+                 "Pomodoro, stracciatella, salmone affumicato"
+            ]}
         },
         {"nameCategory" : "Food",
-            "menu" : {"name": [1,2,3,4,5,6,7,8,9,10], "price": [1,2,3,4,5,6,7,8,9,10]}
+            "menu" : {"name": [
+                "CAPRESE POMODORO MOZZARELLA",
+                "PIATTO BRESAOLA RUCOLA E GRANA",
+                "PATATINE FRITTE",
+                "FRITTINO MISTO",
+                "HAMBURGER COMPLETO (in piatto)",
+                "PIATTO DI AFFETTATO MISTO",
+                "PIATTO DI FORMAGGI MISTI",
+                "STUZZICHERIA (a persona)",
+                "TRIS",
+                "CORNETTI SALATI",
+                "ROSTICCERIA",
+                "PIZZA RUSTICA"
+            ], "price": [
+                "8,00€",
+                "10,00€",
+                "3,00€",
+                "4,00€",
+                "10,00€",
+                "10,00€",
+                "8,00€",
+                "6,00€",
+                "1,50€",
+                "3,00€",
+                "2,00€",
+                "3,00€"
+            ],
+            "Description": [
+                "",
+                "",
+                "",
+                "",
+                "Hamburger 150gr, patatine, insalata, pomodoro",
+                "",
+                "",
+                "I nostri aperitivi sono preparati con tartine, friselle, formaggi.I prodotti utilizzati sono locali, sempre freschi.",
+                "Olive, arachidi, taralli",
+                "",
+                "",
+                ""
+            ]}
         },
         {"nameCategory" : "Cocktail",
-            "menu" : {"name": [1,2,3,4,5,6,7,8,9,10], "price": [1,2,3,4,5,6,7,8,9,10]}
+            "menu" : {"name": [
+                "SPRITZ",
+                "GIN FIZZ",
+                "JOHN COLLINS",
+                "NEGRONI",
+                "AMERICANO",
+                "HUGO",
+                "CAIPIRINHA",
+                "TEQUILA SUNRISE",
+                "PINACOLADA",
+                "MARGARITA",
+                "MOSCOW MULE",
+                "SEX ON THE BEACH",
+                "LONG ISLAND ICE TEA",
+                "MOJTO CUBANO ORIGINALE",
+                "COSMOPOLITAN",
+                "MOJITO EUROPEO",
+                "IL MORESCO con Vodka",
+                "IL MORESCO con Gin",
+                "GIN TONIC TANQUERY",
+                "GIN TONIC BOMBAY",
+                "GIN TONIC HENDRICK'S",
+                "GIN TONIC MARE"
+                ], "price": [
+                    "5,00€",
+                    "6,00€",
+                    "6,00€",
+                    "6,00€",
+                    "6,00€",
+                    "6,00€",
+                    "6,00€",
+                    "6,00€",
+                    "7,00€",
+                    "7,00€",
+                    "7,00€",
+                    "7,00€",
+                    "7,00€",
+                    "7,00€",
+                    "7,00€",
+                    "7,00€",
+                    "7,00€",
+                    "7,00€",
+                    "6,00€",
+                    "6,00€",
+                    "7,00€",
+                    "8,00€"
+                ],
+                "Description": [
+                    "Prosecco, aperol, soda",
+                    "Gin, succo di limone, soda",
+                    "Gin, succo di limone, soda",
+                    "Gin, campari bitter, vermouth rosso",
+                    "Campari bitter, vermouth rosso, soda",
+                    "Prosecco, sciroppo di sambuco, soda, menta, lime",
+                    "Cachaça, lime, zucchero di canna",
+                    "Tequila, succo di arancia, sciroppo di granatina",
+                    "Rum bianco, succo di ananas, batida de cocco",
+                    "Tequila, triple sec, succo di limone",
+                    "Vodka bianca, succo di lime, ginger beer",
+                    "Vodka bianca, vodka pesca, succo d'arancia,succo di mirtillo",
+                    "Vodka bianca, rum, gin, triple sec, succo di limone, tequila, zucchero liquido, coca cola",
+                    "Rum bianco, succo di lime, zucchero liquido, soda, menta",
+                    "Vodka, cointreau, succo di lime, succo di mirtillo",
+                    "Rum bianco, lime, zucchero di canna, soda, menta",
+                    "Vodka, arancia, zucchero di canna, succo ace e di arancia rossa, succo lime",
+                    "Vodka, arancia, zucchero di canna, succo ace e di arancia rossa, succo lime",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]}
         },
-        {"nameCategory" : "Degustazione",
-            "menu" : {"name": [1,2,3,4,5,6,7,8,9,10], "price": [1,2,3,4,5,6,7,8,9,10]}
+        {"nameCategory" : "Analcolici",
+            "menu" : {"name": [
+                "IL MORESCO",
+                "VIRGIN MOSCOW MULE",
+                "SPRITZ ANALCOLICO",
+                "BASITO TASSONI"
+                ], "price": [
+                    "5,00€",
+                    "5,00€",
+                    "5,00€",
+                    "5,00€"
+                ],
+                "Description": [
+                    "Arancia, zucchero di canna, succo ace e di arancia rossa, succo lime",
+                    "Ginger Beer, succo di lime, acqua frizzante",
+                    "Succo di arancia, tonica, bitter",
+                    "Cedrata Tassoni, lime, basilico, zucchero"
+                ]}
+        },
+        {"nameCategory" : "Whisky rum e grappe",
+            "menu" : {"name": [
+                "JACK DANIEL'S",
+                "CHIVAS-REGAL",
+                "TALISKER SKY",
+                "OBAN",
+                "LAGAVULIN",
+                "RUM DIPLOMATICO",
+                "ZACAPA 23 ANNI",
+                "ZACAPA XO",
+                "GRAPPA BIANCA",
+                "GRAPPA BARRIQUE"
+            ], "price": [
+                "6,00€",
+                "7,00€",
+                "8,00€",
+                "8,00€",
+                "8,00€",
+                "8,00€",
+                "8,00€",
+                "10,00€",
+                "3,50€",
+                "4,00€"
+            ],
+                "Description": []}
+        },
+        {"nameCategory" : "Birre",
+            "menu" : {"name": [
+                "BIRRA ARTIGIANALE PALASCìA",
+                "BIRRA ARTIGIANALE ARAGONESE",
+                "BIRRA ARTIGIANALE ORTE",
+                "BIRRA ARTIGIANALE ANARKICA",
+                "HEINEKEN",
+                "NASTRO AZZURRO",
+                "MENABREA",
+                "BECK'S",
+                "CERES",
+                "CORONA",
+                "TENNENT'S SUPER",
+                "BIRRA WEISS",
+                "BIRRA ALLA SPINA PICCOLA",
+                "BIRRA ALLA SPINA MEDIA"
+            ], "price": [
+                "6,00€",
+                "6,00€",
+                "6,00€",
+                "3,50€",
+                "2,50€",
+                "2,50€",
+                "3,00€",
+                "3,00€",
+                "4,00€",
+                "4,00€",
+                "4,00€",
+                "5,00€",
+                "3,00€",
+                "4,50€"
+            ],
+                "Description": [
+                    "Golden ale",
+                    "American ipa",
+                    "Dubble",
+                    "Cream ale",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]}
+        },
+        {"nameCategory" : "Amari e liquori",
+            "menu" : {"name": [
+                "MONTENEGRO",
+                "LUCANO",
+                "JÄGERMEISTER",
+                "AMARO DEL CAPO",
+                "UNICUM",
+                "ZEDDA PIRAS",
+                "BRANCA MENTA",
+                "FERNET BRANCA",
+                "AMARETTO DI SARONNO",
+                "SAMBUCA MOLINARI",
+                "BAYLES",
+                "LIMONCELLO",
+                "ANIMA NERA"
+            ], "price": [
+                "2,50€",
+                "2,50€",
+                "2,50€",
+                "2,50€",
+                "2,50€",
+                "2,50€",
+                "2,50€",
+                "2,50€",
+                "2,50€",
+                "2,50€",
+                "3,00€",
+                "3,00€",
+                "3,00€"
+            ],
+            "Description": []}
         },
         {"nameCategory" : "Vini",
-            "menu" : {"name": [1,2,3,4,5,6,7,8,9,10], "price": [1,2,3,4,5,6,7,8,9,10]}
+            "menu" : {"name": [
+
+            ], "price": [
+                
+            ],
+                "Description": [
+
+                ]}
         }
         
     ]

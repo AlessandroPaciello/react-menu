@@ -14,7 +14,8 @@ class Menu extends React.Component {
             Name_menu = menu.category[index].menu.name.map((el, index) => {
                 return (
                     <li key={index} className='menu_list_description'>
-                        <div key={index} className='menu_name'>{el}
+                        <div key={index} className='text-list'>
+                            <div className='menu_name'>{el}</div>
                             <div className='menu_price'>{price_menu[index]}</div>
                         </div>
                         <div className="description_menu">{description_menu[index]}</div>

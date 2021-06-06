@@ -76,7 +76,7 @@ class Category extends React.Component {
         
         let element = menu.category.map((ob, index) => {
             return (
-                <div key={"element" + index} index={index} id={"category"} className='list animate__animated' onTouchEnd={e => this.Openlist(e)}>
+                <div key={"element" + index} index={index} id={"category"} className='list' onTouchEnd={e => this.Openlist(e)}>
                     {ob.nameCategory}
                 </div>
                 ) 
