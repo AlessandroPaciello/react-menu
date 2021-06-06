@@ -422,13 +422,17 @@
         },
         {"nameCategory" : "Vini",
             "menu" : {"name": [
-
+                ""
             ], "price": [
-                
+                ""
             ],
                 "Description": [
 
-                ]}
+                ],
+                "Category": {
+                    "0" : "bianco"
+                }
+            }
         }
         
     ]

@@ -11,14 +11,14 @@ class Menu extends React.Component {
         let Name_menu
 
         if(menu.category[index].menu.Description){
-            Name_menu = menu.category[index].menu.name.map((el, index) => {
+            Name_menu = menu.category[index].menu.name.map((el, index_map) => {
                 return (
-                    <li key={index} className='menu_list_description'>
-                        <div key={index} className='text-list'>
+                    <li key={index_map} className='menu_list_description'>
+                        <div key={index_map} className='text-list'>
                             <div className='menu_name'>{el}</div>
-                            <div className='menu_price'>{price_menu[index]}</div>
+                            <div className='menu_price'>{price_menu[index_map]}</div>
                         </div>
-                        <div className="description_menu">{description_menu[index]}</div>
+                        <div className="description_menu">{description_menu[index_map]}</div>
                     </li>)
             })
         }
