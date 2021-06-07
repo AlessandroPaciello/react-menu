@@ -49,7 +49,10 @@
                 "1,20€",
                 "2,00€",
                 "1,00€"
-            ]}
+            ],"Description": [],
+             "Category": {
+                 "0" : "CAFFETTERIA"
+             }}
         },
         {"nameCategory" : "Bibite",
             "menu" : {"name": [
@@ -86,7 +89,10 @@
                 "2,50€",
                 "4,00€",
                 ""
-            ]}
+            ],"Description": [],
+            "Category": {
+                "0" : "BIBITE"
+            }}
         },
         {"nameCategory" : "Pucce",
             "menu" : {"name": [
@@ -128,7 +134,10 @@
                 "Kebab di tacchino 100% italiano, ins. pom. form., funghi, maionese",
                 "Pomodoro, mozzarella, tonno, insalata",
                 "Pomodoro, mozzarella, salmone affumicato, insalata"
-            ]}
+            ],
+            "Category": {
+                "0" : "PUCCE"
+            }}
         },
         {"nameCategory" : "Insalate",
             "menu" : {"name": [
@@ -151,7 +160,10 @@
                   "Insalata, pom., cocomero, cipolla di Tropea, mozzarella",
                   "Insalata, pomodoro, mozzarella, mais, tonno",
                   "Insalata, pomodoro, noci e grana padano"
-              ]} 
+              ],
+              "Category": {
+                  "0" : "INSTALATE"
+              }} 
         },
         {"nameCategory" : "Friselle",
             "menu" : {"name": [
@@ -176,7 +188,10 @@
                  "Pomodoro, mozzarella, tonno",
                  "Pomodoro, mozzarella, crudo",
                  "Pomodoro, stracciatella, salmone affumicato"
-            ]}
+            ],
+            "Category": {
+                "0" : "FRISELLE"
+            }}
         },
         {"nameCategory" : "Food",
             "menu" : {"name": [
@@ -219,7 +234,10 @@
                 "",
                 "",
                 ""
-            ]}
+            ],
+            "Category": {
+                "0" : "FOOD"
+            }}
         },
         {"nameCategory" : "Cocktail",
             "menu" : {"name": [
@@ -241,10 +259,10 @@
                 "MOJITO EUROPEO",
                 "IL MORESCO con Vodka",
                 "IL MORESCO con Gin",
-                "GIN TONIC TANQUERY",
-                "GIN TONIC BOMBAY",
-                "GIN TONIC HENDRICK'S",
-                "GIN TONIC MARE"
+                "GIN TANQUERY",
+                "GIN BOMBAY",
+                "GIN HENDRICK'S",
+                "GIN MARE"
                 ], "price": [
                     "5,00€",
                     "6,00€",
@@ -292,7 +310,11 @@
                     "",
                     "",
                     ""
-                ]}
+                ],"Category" : {
+                    "0" : "COCKTAIL",
+                    "15" : "PESTATI",
+                    "18" : "GIN TONIC"
+                }}
         },
         {"nameCategory" : "Analcolici",
             "menu" : {"name": [
@@ -311,7 +333,10 @@
                     "Ginger Beer, succo di lime, acqua frizzante",
                     "Succo di arancia, tonica, bitter",
                     "Cedrata Tassoni, lime, basilico, zucchero"
-                ]}
+                ],
+                "Category": {
+                    "0" : "ANALCOLICI"
+                }}
         },
         {"nameCategory" : "Whisky rum e grappe",
             "menu" : {"name": [
@@ -337,14 +362,13 @@
                 "3,50€",
                 "4,00€"
             ],
-                "Description": []}
+                "Description": [],
+                "Category": {
+                    "0" : "WHISKY RUM E GRAPPE"
+                }}
         },
         {"nameCategory" : "Birre",
             "menu" : {"name": [
-                "BIRRA ARTIGIANALE PALASCìA",
-                "BIRRA ARTIGIANALE ARAGONESE",
-                "BIRRA ARTIGIANALE ORTE",
-                "BIRRA ARTIGIANALE ANARKICA",
                 "HEINEKEN",
                 "NASTRO AZZURRO",
                 "MENABREA",
@@ -353,13 +377,14 @@
                 "CORONA",
                 "TENNENT'S SUPER",
                 "BIRRA WEISS",
-                "BIRRA ALLA SPINA PICCOLA",
-                "BIRRA ALLA SPINA MEDIA"
+                "BIRRA PICCOLA",
+                "BIRRA MEDIA",
+                "BIRRA PALASCìA",
+                "BIRRA ARAGONESE",
+                "BIRRA ORTE",
+                "BIRRA ANARKICA"
             ], "price": [
-                "6,00€",
-                "6,00€",
-                "6,00€",
-                "3,50€",
+                
                 "2,50€",
                 "2,50€",
                 "3,00€",
@@ -369,24 +394,33 @@
                 "4,00€",
                 "5,00€",
                 "3,00€",
-                "4,50€"
+                "4,50€",
+                "6,00€",
+                "6,00€",
+                "6,00€",
+                "3,50€"
             ],
                 "Description": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
                     "Golden ale",
                     "American ipa",
                     "Dubble",
-                    "Cream ale",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ]}
+                    "Cream ale"
+                ],
+                "Category": {
+                    "0" : "BIRRE",
+                    "8" : "BIRRE ALLA SPINA",
+                    "10": "BIRRE ARTIGIANALI"
+                }}
         },
         {"nameCategory" : "Amari e liquori",
             "menu" : {"name": [
@@ -418,23 +452,71 @@
                 "3,00€",
                 "3,00€"
             ],
-            "Description": []}
+            "Description": [],
+            "Category": {
+                "0" : "AMARI E LIQUORI"
+            }}
         },
         {"nameCategory" : "Vini",
             "menu" : {"name": [
-                ""
+                "TAERSIA",
+                "CANTELE",
+                "TORMARESCA",
+                "TRAMARI",
+                "CALAFURIA",
+                "ORFEO",
+                "DON COSIMO"
             ], "price": [
-                ""
+                "16,00€",
+                "18,00€",
+                "18,00€",
+                "25,00€",
+                "25,00€",
+                "25,00€",
+                "18,00€"
             ],
                 "Description": [
-
+                    "Uve Negroamaro 75cl",
+                    "Uve Verdeca 75cl",
+                    "Uve Verdeca 75cl",
+                    "Uve Primitivo 75cl",
+                    "Uve Negroamaro 75cl",
+                    "Uve Negroamaro 75cl",
+                    "Uve Primitivo 75cl"
                 ],
                 "Category": {
-                    "0" : "bianco"
+                    "0" : "BIANCO",
+                    "3" : "ROSATO",
+                    "5" : "ROSSO"
+                }
+            }
+        },
+        {"nameCategory" : "Prosecco",
+            "menu" : {
+                "name": [
+                    "FLUTE",
+                    "PROSECCO MILLESIMATO",
+                    "CÀ DEL BOSCO",
+                    "FERRARI",
+                    "CONTADI CASTALDI"
+                ],
+                "price": [
+                    "3,50€",
+                    "20,00€",
+                    "45,00€",
+                    "28,00€",
+                    "35,00€"
+                ],
+                "Description": [
+                    "",
+                    ""
+                ],
+                "Category": {
+                    "0" : "PROSECCO",
+                    "2" : "FRANCIACORTA"
                 }
             }
         }
-        
     ]
     
 

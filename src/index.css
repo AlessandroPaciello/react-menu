@@ -40,10 +40,9 @@
     text-align: center;
     z-index: 1;
     width: 70%;
-    margin-top: 13vh;
+    margin-top: 7vh;
     margin-left: auto;
     margin-right: auto;
-    font-size: 34px;
     color: #bf4011;
     animation: zoom-text 4s;
     animation-iteration-count: infinite;
@@ -162,6 +161,7 @@
 
   div#category {
   position:relative;
+  font-weight:bold;
   width:80%;
   padding-top:2vh;
   padding-bottom:2vh;
@@ -228,7 +228,7 @@
     flex-direction: column;
     font-size: 16px;
     padding-bottom:2vh;
-    margin-top: 4vh;
+    margin-top: 2.5vh;
     margin-bottom: 2vh;
     margin-left: auto;
     margin-right: auto;
@@ -251,7 +251,8 @@
   color: black;
   }
 
-  div.text-list{
+  div.text_list{
+    margin-left: 1vh;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -260,7 +261,7 @@
 
   div.menu_name{
     position: relative;
-    width: 80%;
+    width: 77%;
   }
 
   div.menu_price{
@@ -270,11 +271,23 @@
     width: 20%;
     float: right;
   }
+
   div.description_menu{
     position: relative;
     width: 80%;
     font-size: 14px;
+    margin-left: 1vh;
   }
+
+  div.menu_category{
+    font-weight:bold;
+    font-size: 18px;
+    margin-bottom: 2vh;
+    margin-left: -1vh;
+  }
+
+  
+  
 
   /* header */
 
