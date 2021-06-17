@@ -196,7 +196,7 @@
         {"nameCategory" : "Food",
             "menu" : {"name": [
                 "CAPRESE POMODORO MOZZARELLA",
-                "PIATTO BRESAOLA RUCOLA E GRANA",
+                "BRESAOLA RUCOLA E GRANA",
                 "PATATINE FRITTE",
                 "FRITTINO MISTO",
                 "HAMBURGER COMPLETO (in piatto)",
@@ -349,7 +349,9 @@
                 "ZACAPA 23 ANNI",
                 "ZACAPA XO",
                 "GRAPPA BIANCA",
-                "GRAPPA BARRIQUE"
+                "GRAPPA PRIME UVE",
+                "GRAPPA BARRIQUE",
+                "GRAPPA DICIOTTO LUNE"
             ], "price": [
                 "6,00€",
                 "7,00€",
@@ -359,12 +361,15 @@
                 "8,00€",
                 "8,00€",
                 "10,00€",
+                "5,00€",
                 "3,50€",
-                "4,00€"
+                "4,00€",
+                "4,50€"
             ],
                 "Description": [],
                 "Category": {
-                    "0" : "WHISKY RUM E GRAPPE"
+                    "0" : "WHISKY E RUM",
+                    "8" : "GRAPPE"
                 }}
         },
         {"nameCategory" : "Birre",
@@ -462,6 +467,7 @@
                 "TAERSIA",
                 "CANTELE",
                 "TORMARESCA",
+                "TERESA MANARA",
                 "TRAMARI",
                 "CALAFURIA",
                 "ORFEO",
@@ -473,21 +479,23 @@
                 "25,00€",
                 "25,00€",
                 "25,00€",
+                "25,00€",
                 "18,00€"
             ],
                 "Description": [
-                    "Uve Negroamaro 75cl",
-                    "Uve Verdeca 75cl",
-                    "Uve Verdeca 75cl",
-                    "Uve Primitivo 75cl",
-                    "Uve Negroamaro 75cl",
-                    "Uve Negroamaro 75cl",
-                    "Uve Primitivo 75cl"
+                    "Negroamaro 75cl",
+                    "Verdeca 75cl",
+                    "Verdeca 75cl",
+                    "Chardonnay 75cl",
+                    "Primitivo 75cl",
+                    "Negroamaro 75cl",
+                    "Negroamaro 75cl",
+                    "Primitivo 75cl"
                 ],
                 "Category": {
                     "0" : "BIANCO",
-                    "3" : "ROSATO",
-                    "5" : "ROSSO"
+                    "4" : "ROSATO",
+                    "6" : "ROSSO"
                 }
             }
         },
@@ -504,7 +512,7 @@
                     "3,50€",
                     "20,00€",
                     "45,00€",
-                    "28,00€",
+                    "38,00€",
                     "35,00€"
                 ],
                 "Description": [
