@@ -1,7 +1,6 @@
 import React from 'react'
 import Menu from './menu'
 import Header from './header'
-import ScrollOut from "scroll-out";
 import 'animate.css'
 
 const menu = require('./menu.json')
@@ -10,7 +9,7 @@ class Category extends React.Component {
     
     state = {
         drag: false,
-        index: null,
+        index: 0,
         category: null,
         active: false
     }
