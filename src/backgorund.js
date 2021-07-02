@@ -58,13 +58,11 @@ class Backgorund extends React.Component{
         
         return(
             <div className="homePage" onTouchStart={(e)=>this.StartOpen(e)}>
-                <div className="elementHome">ù
+                <div className="elementHome">
                     <div className="text_box">
                     <h2 className="text_menu">Tocca sullo schermo</h2>
                     <div className="animation_tap"></div>
                     </div>
-                    
-                    
                     <img className='logo' src={logo} alt='logo'/>
                 </div>
                 <div id="bgMenu" className={className} style={style}></div>

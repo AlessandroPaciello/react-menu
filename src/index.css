@@ -309,9 +309,9 @@
     margin:0;
     padding:0;
     width:100%;
-background: #a0cae4;
-box-shadow: inset 20px 20px 60px #88acc2,
-            inset -20px -20px 60px #b8e8ff;
+    background: #a0cae4;
+    box-shadow: inset 20px 20px 60px #88acc2,
+                inset -20px -20px 60px #b8e8ff;
   }
 
   .box_logo{
@@ -335,6 +335,41 @@ box-shadow: inset 20px 20px 60px #88acc2,
   padding-left:3vh;
   }
 
+  ul.button_language_text{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight:bold;
+    color: #025959;
+    padding-bottom: 2.5vh;
+  }
+
+  div.button_language {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 1.75vh;
+    margin-right: 3vh;
+    border-radius: 50%;
+    right: 0;
+    padding: 3.5vh;
+    background: #a0cae4;
+    box-shadow:  20px 20px 60px #88acc2,
+                -20px -20px 60px #b8e8ff;
+    background-image: url('./img/language.svg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  
   div.button_category{
     position: absolute;
     margin:0;
@@ -347,6 +382,43 @@ box-shadow: inset 20px 20px 60px #88acc2,
                 -20px -20px 60px #b8e8ff;
   }
 
+  div.button_language-open{
+    animation: open_language .2s;
+    animation-fill-mode: forwards;
+    padding: 2vh;
+  }
+
+  div.button_language-closed{
+    animation: closed_language .2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes open_language {
+    from {
+      height: 0;
+      border-radius: 50%;
+    }
+    to {
+      height: 8vh;
+      border-radius: 25%;
+      background-size: 0;
+    }
+  }
+
+  @keyframes closed_language {
+    from{
+      height: 6vh;
+      border-radius: 25%;
+      background-size: 0;
+    }
+    to{
+      height: 0;
+      border-radius: 50%;
+      background-size:50%
+    }
+  }
+
+  
   div.open{
     animation: open_button .2s;
     animation-fill-mode: forwards;
@@ -357,6 +429,7 @@ box-shadow: inset 20px 20px 60px #88acc2,
     animation-fill-mode: forwards;
   }
 
+
   @keyframes open_button {
     from{
       padding: 0;
@@ -364,7 +437,7 @@ box-shadow: inset 20px 20px 60px #88acc2,
     to{
       padding: 3vh;
       background-image: url('./img/left-arrow.svg');
-      background-size: 3vh;
+      background-size: 50%;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -372,7 +445,7 @@ box-shadow: inset 20px 20px 60px #88acc2,
 
   @keyframes closed_button {
     from{
-      padding: 3.5vh;
+      padding: 3vh;
       background-size: 3vh;
       background-repeat: no-repeat;
       background-position: center;
