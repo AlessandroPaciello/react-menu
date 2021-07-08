@@ -46,11 +46,13 @@ class Language extends React.Component {
         show : false
     }
 
-    SelectLanguage = () => {
+    SelectLanguage = (e) => {
 
         const {show} = this.state
         let button = document.getElementById('button_language')
-
+        if (e.target.id === "language") {
+            console.log("funziona")
+        }
         button.classList.toggle('button_language-open')
         button.classList.toggle('button_language-closed')
         this.setState({
@@ -63,7 +65,7 @@ class Language extends React.Component {
 
         const {show} = this.state
 
-        return (<div id='button_language' className="button_language button_language-closed" onTouchEnd={() => {this.SelectLanguage()}}>
+        return (<div id='button_language' className="button_language button_language-closed" onTouchEnd={(e) => {this.SelectLanguage(e)}}>
                       {
                           show ? <ListLanguage /> : <div> </div>
                       }
@@ -74,8 +76,8 @@ class Language extends React.Component {
 
 function ListLanguage() {
     return (<ul className='button_language_text'>
-    <li className="text" onTouchEnd={(e) => {console.log(e)}}>IT</li>
-    <li className="text">EN</li>
+    <li id="language_it" className="text">IT</li>
+    <li id="language_en" className="text">EN</li>
 </ul>)
 }
 
