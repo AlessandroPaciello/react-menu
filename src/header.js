@@ -29,7 +29,7 @@ class Header extends React.Component {
 
         return <header id={"header"} className="header">
                     <div id='button_category' className='button_category' onTouchEnd={() => {this.GoBack()}}></div>
-                    <Language />
+                    <Language language={this.props.language} menu_it={this.props.menu_it} menu_en={this.props.menu_en}/>
                     <div className="box_logo">
                         <img className='logo_header' src={Logo}></img>
                         <img className='scritta_header' src={Scritta}></img>
@@ -50,8 +50,11 @@ class Language extends React.Component {
 
         const {show} = this.state
         let button = document.getElementById('button_language')
-        if (e.target.id === "language") {
-            console.log("funziona")
+        if (e.target.id === "language_it") {
+            this.props.language(this.props.menu_it)
+        }
+        else if (e.target.id === "language_en") {
+            this.props.language(this.props.menu_en)
         }
         button.classList.toggle('button_language-open')
         button.classList.toggle('button_language-closed')
@@ -59,7 +62,6 @@ class Language extends React.Component {
             show: !show
         })
     }
-
 
     render() {
 
@@ -75,6 +77,7 @@ class Language extends React.Component {
 }
 
 function ListLanguage() {
+     
     return (<ul className='button_language_text'>
     <li id="language_it" className="text">IT</li>
     <li id="language_en" className="text">EN</li>

@@ -1,30 +1,30 @@
 {
     "category" : [
-        {"nameCategory" : "Caffetteria",
+        {"nameCategory" : "Cafeteria",
             "menu" :{"name" :[
                 "ESPRESSO",
                 "ESPRESSO AMERICANO",
-                "ESPRESSO AMERICANO - LATTE",
-                "ESPRESSO DECAFFEINATO",
+                "ESPRESSO AMERICANO - MILK",
+                "DECAFFEINATED ESPRESSO",
                 "ESPRESSO D'ORZO",
-                "ESPRESSO CORRETTO",
+                "CORRECT ESPRESSO",
                 "GINSENG",
-                "GINSENG IN GHIACCIO",
-                "ESPRESSO IN GHIACCIO",
+                "GINSENG IN ICE",
+                "ESPRESSO IN ICE",
                 "ESPRESSINO",
-                "LATTE",
+                "MILK",
                 "LATTE MACCHIATO",
-                "ESPRESSINO CON SOIA",
-                "ESPR. IN GHIACCIO/LATTE DI MANDORLA",
+                "EXPRESS WITH SOY",
+                "EXPR. IN ICE / ALMOND MILK",
                 "CAPPUCCINO",
-                "CAPPUCCINO DI SOIA",
-                "CREMA AL CAFFÈ",
-                "CREMA AL CAFFÈ GRANDE",
-                "CORNETTI ASSORTITI",
-                "CROSTATINE",
-                "CROSTATINE PICCOLE",
-                "PASTICCIOTTO ARTIGIANALE",
-                "BISCOTTI"
+                "SOY CAPPUCCINO",
+                "COFFEE CREAM",
+                "GREAT COFFEE CREAM",
+                "CROISSANTS",
+                "TARTS",
+                "SMALL TARTS",
+                "PASTICCIOTTO HOME MADE",
+                "COOKIES"
             ], "price" :[
                 "1,30€",
                 "1,50€",
@@ -51,27 +51,27 @@
                 "1,00€"
             ],"Description": [],
              "Category": {
-                 "0" : "CAFFETTERIA"
+                 "0" : "Cafeteria"
              }}
         },
-        {"nameCategory" : "Bibite",
+        {"nameCategory" : "Soft drinks",
             "menu" : {"name": [
-                "SUCCHI DI FRUTTA",
-                "BIBITE IN LATTINA",
+                "FRUIT JUICES",
+                "DRINKS IN CAN",
                 "REDBULL",
-                "SPREMUTA DI ARANCE",
-                "SPREMUTA MISTA",
-                "SPREMUTA DI MELAGRANA",
-                "ACQUA MINERALE 500ML",
-                "ACQUA MINERALE 1L",
+                "ORANGE JUICE",
+                "MIXED JUICE",
+                "POMEGRANATE JUICE",
+                "MINERAL WATER 500ML",
+                "MINERAL WATER 1L",
                 "GASSOSA CHIURAZZI",
                 "CEDRATA TASSONI",
-                "SCHWEPPES CLASSICA / AL LIMONE",
+                "CLASSIC SCHWEPPES/LEMON",
                 "CRODINO",
-                "SANBITTER BIANCO/ROSSO",
+                "SANBITTER WHITE/RED",
                 "COCKTAIL SAN PELLEGRINO",
-                "SPUMONI ARTIGIANALI",
-                "GELATI ALGIDA"
+                "ARTISAN SPUMONI",
+                "ICE CREAM ALGIDA"
             ], "price": [
                 "2,50€",
                 "2,50€",
@@ -91,12 +91,12 @@
                 ""
             ],"Description": [],
             "Category": {
-                "0" : "BIBITE"
+                "0" : "SOFT DRINKS"
             }}
         },
         {"nameCategory" : "Pucce",
             "menu" : {"name": [
-                "MORTADELLA E PROVOLA",
+                "MORTADELLA AND PROVOLA",
                 "MAESTRALE",
                 "LEVANTE",
                 "OSTRO",
@@ -123,23 +123,23 @@
                 "7,00€"
             ], "Description" : [
                 "",
-                "Pomodoro, mozzarella, rucola",
-                "Pomodoro, mozzarella, crudo, insalata",
-                "Pomodoro, formaggio, cotto, insalata",
-                "Hamburger di Bovino 150g. insalata, pomodoro, formaggio, salse",
-                "Hamburger di Bovino 300g. insalata, pomodoro, formaggio, salse",
-                "Pomodoro, formaggio, funghi, salame, insalata",
-                "Pomodoro, mozzarella, bresaola, funghi, rucola",
-                "Pomodoro, mozzarella, melanzane, carciofi, pomodori secchi, rucola",
-                "Kebab di tacchino 100% italiano, ins. pom. form., funghi, maionese",
-                "Pomodoro, mozzarella, tonno, insalata",
-                "Pomodoro, mozzarella, salmone affumicato, insalata"
+                "Tomato, mozzarella, rocket",
+                "Tomato, mozzarella, raw ham, salad",
+                "Tomato, cheese, ham, salad",
+                "Beef Hamburger 150g. salad, tomato, cheese, sauces",
+                "Beef Hamburger 300g. salad, tomato, cheese, sauces",
+                "Tomato, cheese, mushrooms, salami, salad",
+                "Tomato, mozzarella, bresaola, mushrooms, rocket",
+                "Tomato, mozzarella, aubergines, artichokes, dried tomatoes, rocket",
+                "100% Italian turkey kebab, ins. pom. form., mushrooms, mayonnaise",
+                "Tomato, mozzarella, tuna, salad",
+                "Tomato, mozzarella, smoked salmon, salad"
             ],
             "Category": {
                 "0" : "PUCCE"
             }}
         },
-        {"nameCategory" : "Insalate",
+        {"nameCategory" : "Salad",
             "menu" : {"name": [
                 "ORTE",
                 "FASCIO",
@@ -155,14 +155,14 @@
                  "7,00€"
             ],
               "Description": [
-                  "Insalata, pomodoro, mozzarella, rucola",
-                  "Insalata, pomodoro, mais, salmone affumicato",
-                  "Insalata, pom., cocomero, cipolla di Tropea, mozzarella",
-                  "Insalata, pomodoro, mozzarella, mais, tonno",
-                  "Insalata, pomodoro, noci e grana padano"
+                  "Salad, tomato, mozzarella, rocket",
+                  "Salad, tomato, corn, smoked salmon",
+                  "Salad, tomato, watermelon, Tropea onion, mozzarella",
+                  "Salad, tomato, mozzarella, corn, tuna",
+                  "Salad, tomato, walnuts and Grana Padano"
               ],
               "Category": {
-                  "0" : "INSTALATE"
+                  "0" : "SALAD"
               }} 
         },
         {"nameCategory" : "Friselle",
@@ -182,12 +182,12 @@
                 "7,00€"
             ],
             "Description": [
-                 "Pomodoro, sale olio, origano",
-                 "Pomodoro, melanzane, pomodorini secchi",
-                 "Pomodoro, staccaitella",
-                 "Pomodoro, mozzarella, tonno",
-                 "Pomodoro, mozzarella, crudo",
-                 "Pomodoro, stracciatella, salmone affumicato"
+                 "Tomato, salt, oil, oregano",
+                 "Tomato, eggplant, dried cherry tomatoes",
+                 "Tomato, staccaitella",
+                 "Tomato, mozzarella, tuna",
+                 "Tomato, mozzarella, raw ham",
+                 "Tomato, stracciatella, smoked salmon"
             ],
             "Category": {
                 "0" : "FRISELLE"
@@ -195,16 +195,16 @@
         },
         {"nameCategory" : "Food",
             "menu" : {"name": [
-                "CAPRESE POMODORO MOZZARELLA",
-                "BRESAOLA RUCOLA E GRANA",
-                "PATATINE FRITTE",
-                "FRITTINO MISTO",
-                "HAMBURGER COMPLETO (in piatto)",
-                "PIATTO DI AFFETTATO MISTO",
-                "PIATTO DI FORMAGGI MISTI",
-                "STUZZICHERIA (a persona)",
+                "CAPRESE TOMATO MOZZARELLA",
+                "BRESAOLA ROCKET AND GRAIN",
+                "CHIPS",
+                "MIXED FRITTER",
+                "COMPLETE HAMBURGER (on plate)",
+                "MIXED SLICED DISH",
+                "MIXED CHEESE PLATE",
+                "STUZZICHERIA (per person)",
                 "TRIS",
-                "CORNETTI SALATI",
+                "SAVORY CROISSANTS",
                 "ROSTICCERIA",
                 "PIZZA RUSTICA"
             ], "price": [
@@ -226,10 +226,10 @@
                 "",
                 "",
                 "",
-                "Hamburger 150gr, patatine, insalata, pomodoro",
+                "Hamburger 150gr, chips, salad, tomato",
                 "",
                 "",
-                "I nostri aperitivi sono preparati con tartine, friselle, formaggi.I prodotti utilizzati sono locali, sempre freschi.",
+                "Our aperitifs are prepared with canapés, friselle, cheeses. The products used are local, always fresh.",
                 "Olive, arachidi, taralli",
                 "",
                 "",
@@ -257,8 +257,8 @@
                 "MOJTO CUBANO ORIGINALE",
                 "COSMOPOLITAN",
                 "MOJITO EUROPEO",
-                "IL MORESCO con Vodka",
-                "IL MORESCO con Gin",
+                "IL MORESCO with Vodka",
+                "IL MORESCO with Gin",
                 "GIN TANQUERY",
                 "GIN BOMBAY",
                 "GIN HENDRICK'S",
@@ -289,38 +289,38 @@
                 ],
                 "Description": [
                     "Prosecco, aperol, soda",
-                    "Gin, succo di limone, soda",
-                    "Gin, succo di limone, soda",
+                    "Gin, lemon juice, soda",
+                    "Gin, lemon juice, soda",
                     "Gin, campari bitter, vermouth rosso",
                     "Campari bitter, vermouth rosso, soda",
-                    "Prosecco, sciroppo di sambuco, soda, menta, lime",
-                    "Cachaça, lime, zucchero di canna",
-                    "Tequila, succo di arancia, sciroppo di granatina",
-                    "Rum bianco, succo di ananas, batida de cocco",
-                    "Tequila, triple sec, succo di limone",
-                    "Vodka bianca, succo di lime, ginger beer",
-                    "Vodka bianca, vodka pesca, succo d'arancia,succo di mirtillo",
-                    "Vodka bianca, rum, gin, triple sec, succo di limone, tequila, zucchero liquido, coca cola",
-                    "Rum bianco, succo di lime, zucchero liquido, soda, menta",
-                    "Vodka, cointreau, succo di lime, succo di mirtillo",
+                    "Prosecco, elderberry syrup, soda, mint, lime",
+                    "Cachaça, lime, brown sugar",
+                    "Tequila, orange juice, grenadine syrup",
+                    "White rum, pineapple juice, coconut batida",
+                    "Tequila, triple sec, lemon juice",
+                    "White vodka, lime juice, ginger beer",
+                    "White vodka, peach vodka, orange juice, cranberry juice",
+                    "White vodka, rum, gin, triple sec, lemon juice, tequila, liquid sugar, cola",
+                    "White rum, lime juice, liquid sugar, soda, mint",
+                    "Vodka, cointreau, lime juice, cranberry juice",
                     "Rum bianco, lime, zucchero di canna, soda, menta",
-                    "Vodka, arancia, zucchero di canna, succo ace e di arancia rossa, succo lime",
-                    "Vodka, arancia, zucchero di canna, succo ace e di arancia rossa, succo lime",
+                    "Vodka, orange, brown sugar, ace and blood orange juice, lime juice",
+                    "Gin, orange, brown sugar, ace and blood orange juice, lime juice",
                     "",
                     "",
                     "",
                     ""
                 ],"Category" : {
                     "0" : "COCKTAIL",
-                    "15" : "PESTATI",
+                    "15" : "PESTED",
                     "18" : "GIN TONIC"
                 }}
         },
-        {"nameCategory" : "Analcolici",
+        {"nameCategory" : "Non-alcoholic",
             "menu" : {"name": [
                 "IL MORESCO",
                 "VIRGIN MOSCOW MULE",
-                "SPRITZ ANALCOLICO",
+                "NON-ALCOHOLIC SPRITZ",
                 "BASITO TASSONI"
                 ], "price": [
                     "5,00€",
@@ -329,16 +329,16 @@
                     "5,00€"
                 ],
                 "Description": [
-                    "Arancia, zucchero di canna, succo ace e di arancia rossa, succo lime",
-                    "Ginger Beer, succo di lime, acqua frizzante",
-                    "Succo di arancia, tonica, bitter",
-                    "Cedrata Tassoni, lime, basilico, zucchero"
+                    "Orange, cane sugar, ace and blood orange juice, lime juice",
+                    "Ginger Beer, lime juice, sparkling water",
+                    "Orange juice, tonic, bitter",
+                    "Tassoni cedrata, lime, basil, sugar"
                 ],
                 "Category": {
                     "0" : "ANALCOLICI"
                 }}
         },
-        {"nameCategory" : "Whisky rum e grappe",
+        {"nameCategory" : "Whisky rum and grappe",
             "menu" : {"name": [
                 "JACK DANIEL'S",
                 "CHIVAS-REGAL",
@@ -348,7 +348,7 @@
                 "RUM DIPLOMATICO",
                 "ZACAPA 23 ANNI",
                 "ZACAPA XO",
-                "GRAPPA BIANCA",
+                "WHITE GRAPPA",
                 "GRAPPA PRIME UVE",
                 "GRAPPA BARRIQUE",
                 "GRAPPA DICIOTTO LUNE"
@@ -372,7 +372,7 @@
                     "8" : "GRAPPE"
                 }}
         },
-        {"nameCategory" : "Birre",
+        {"nameCategory" : "Beers",
             "menu" : {"name": [
                 "HEINEKEN",
                 "NASTRO AZZURRO",
@@ -381,13 +381,13 @@
                 "CERES",
                 "CORONA",
                 "TENNENT'S SUPER",
-                "BIRRA WEISS",
-                "BIRRA PICCOLA",
-                "BIRRA MEDIA",
-                "BIRRA PALASCìA",
-                "BIRRA ARAGONESE",
-                "BIRRA ORTE",
-                "BIRRA ANARKICA"
+                "WEISS BEER",
+                "SMALL BEER",
+                "MEDIUM BEER",
+                "PALASCìA BEER",
+                "ARAGONESE BEER",
+                "ORTE BEER",
+                "ANARKICA BEER"
             ], "price": [
                 
                 "2,50€",
@@ -422,12 +422,12 @@
                     "Cream ale"
                 ],
                 "Category": {
-                    "0" : "BIRRE",
-                    "8" : "BIRRE ALLA SPINA",
-                    "10": "BIRRE ARTIGIANALI"
+                    "0" : "BEERS",
+                    "8" : "BEER AT DRAWER",
+                    "10": "HOMEMADE BEERS"
                 }}
         },
-        {"nameCategory" : "Amari e liquori",
+        {"nameCategory" : "Bitters and liqueurs",
             "menu" : {"name": [
                 "MONTENEGRO",
                 "LUCANO",
@@ -437,7 +437,7 @@
                 "ZEDDA PIRAS",
                 "BRANCA MENTA",
                 "FERNET BRANCA",
-                "AMARETTO DI SARONNO",
+                "AMARETTO DISARONNO",
                 "SAMBUCA MOLINARI",
                 "BAYLES",
                 "LIMONCELLO",
@@ -459,10 +459,10 @@
             ],
             "Description": [],
             "Category": {
-                "0" : "AMARI E LIQUORI"
+                "0" : "BITTERS AND LIQUEURS"
             }}
         },
-        {"nameCategory" : "Vini",
+        {"nameCategory" : "Wines",
             "menu" : {"name": [
                 "TAERSIA",
                 "CANTELE",
@@ -493,9 +493,9 @@
                     "Primitivo 75cl"
                 ],
                 "Category": {
-                    "0" : "BIANCO",
-                    "4" : "ROSATO",
-                    "6" : "ROSSO"
+                    "0" : "WHITE",
+                    "4" : "ROSE",
+                    "6" : "RED"
                 }
             }
         },

@@ -3,7 +3,8 @@ import Menu from './menu'
 import Header from './header'
 import 'animate.css'
 
-const menu = require('./menu.json')
+const menu_it = require('./menu_it.json')
+const menu_en = require('./menu_en.json')
 
 class Category extends React.Component {
     
@@ -11,7 +12,9 @@ class Category extends React.Component {
         drag: false,
         index: 0,
         category: null,
-        active: false
+        active: false,
+        language:  "IT",
+        menu: menu_it
     }
 
     Openlist = (e) => {
@@ -53,6 +56,12 @@ class Category extends React.Component {
         })
     }
 
+    Language = (menu) => {
+        this.setState({
+            menu : menu
+        })
+    }
+
     StartDrag = () => {
         this.setState({
             drag: true,
@@ -65,13 +74,10 @@ class Category extends React.Component {
         })
     }
 
-    componentDidMount() { 
-    }
-
     render() {
 
         const {state, style} = this.props
-        const {index} = this.state
+        const {index, menu} = this.state
         
         let element = menu.category.map((ob, index) => {
             return (
@@ -85,8 +91,8 @@ class Category extends React.Component {
             <div>
                 
                 <div className='page'>
-                    <Header active={this.Active}/>
-                    <Menu index={index}/>
+                    <Header language={this.Language} menu_it={menu_it} menu_en={menu_en} active={this.Active}/>
+                    <Menu index={index} menu={menu}/>
                     <ul id={"list"}  onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
                         {element}
                     </ul>
