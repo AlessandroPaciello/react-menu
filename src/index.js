@@ -41,12 +41,10 @@ class App extends React.Component {
       .then(res => {return res.blob()})
 
       .then((data) => {
-        img[key] = URL.createObjectURL(data) 
-        console.log(Object.keys(stringImg).length)
+        img[key] = URL.createObjectURL(data)
         index ++
       
       if(index === Object.keys(stringImg).length) {
-        console.log("finish")
         this.setState({isLoading : true})
         }
       })
@@ -65,11 +63,6 @@ class App extends React.Component {
           <div>
             <Loading />
             <Async promiseFn={() => {this.Loading()}}>
-              {
-                ({data, error, isLoading}) => {
-                  if(isLoading){console.log("loading..")}
-                }
-              }
             </Async>
           </div>
         }
@@ -79,7 +72,7 @@ class App extends React.Component {
 }
 
 function Loading() {
-  return <p>is loading</p>
+  return <p>loading</p>
 }
 
 ReactDOM.render(
