@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from './img/logo-moresco.svg'
 import Category from './category'
 
 class Backgorund extends React.Component{
@@ -63,10 +62,10 @@ class Backgorund extends React.Component{
                     <h2 className="text_menu">Tocca sullo schermo</h2>
                     <div className="animation_tap"></div>
                     </div>
-                    <img className='logo' src={logo} alt='logo'/>
+                    <img className='logo' src={this.props.img.logo} alt='logo'/>
                 </div>
                 <div id="bgMenu" className={className} style={style}></div>
-                <div className='backgorund'></div>
+                <div className='backgorund' style={{backgroundImage: `url(${this.props.img.bg})`}}></div>
                 
             </div>
         )
@@ -87,7 +86,7 @@ class Backgorund extends React.Component{
         return (
             <div>
                 {
-                    openCategory ? <Category state={this.state} style={style} /> : <this.Start />
+                    openCategory ? <Category state={this.state} style={style} img={this.props.img}/> : <this.Start />
                 }
             </div>
             

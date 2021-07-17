@@ -6,13 +6,22 @@ import Async from 'react-async';
 
 import logo from './img/logo-moresco.svg'
 import bg from './img/Background.svg'
+import logoHeader from './img/logo-header.svg'
+import scrittaHeader from './img/scritta-il-moresco.svg'
+import language from './img/language.svg'
+import arrow from './img/left-arrow.svg'
 
 
-const img = [
-  logo,
-  bg
-]
+const stringImg = {
+  logo : logo,
+  bg : bg,
+  logoHeader : logoHeader,
+  scrittaHeader : scrittaHeader,
+  language : language,
+  arrow : arrow
+}
 
+let img = {}
 
 class App extends React.Component {
 
@@ -22,39 +31,41 @@ class App extends React.Component {
 
   Loading= () => {
 
+    let index = 0
 
-    img.map((el, index) => {
-      fetch(el)
+    for (const [key, value] of Object.entries(stringImg) ) {
+      
+      
+      fetch(value)
+
       .then(res => {return res.blob()})
-      .then(data => {
-      console.log(data)
-      if(index + 1 === img.length) {
+
+      .then((data) => {
+        img[key] = URL.createObjectURL(data)
+        index ++
+      
+      if(index === Object.keys(img).length) {
         this.setState({isLoading : true})
-      }
+        }
       })
-    })
+    }
+
+
   }
 
 
   render() {
 
-    
-
     return (
       <div>
         {
-          this.state.isLoading ? <Backgorund /> : 
+          this.state.isLoading ? <Backgorund img={img} /> : 
           <div>
+            <Loading />
             <Async promiseFn={() => {this.Loading()}}>
               {
                 ({data, error, isLoading}) => {
                   if(isLoading){console.log("loading..")}
-
-                  if(error) {}
-                  
-                  if(data) {
-                      return <div className="isloading"></div>
-                  }
                 }
               }
             </Async>
@@ -64,6 +75,11 @@ class App extends React.Component {
     )
   }
 }
+
+function Loading() {
+  return <p>is loading</p>
+}
+
 ReactDOM.render(
   <App />,
 document.getElementById('root')

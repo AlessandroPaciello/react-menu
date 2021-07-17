@@ -76,7 +76,7 @@ class Category extends React.Component {
 
     render() {
 
-        const {state, style} = this.props
+        const {state, style, img} = this.props
         const {index, menu} = this.state
         
         let element = menu.category.map((ob, index) => {
@@ -91,7 +91,7 @@ class Category extends React.Component {
             <div>
                 
                 <div className='page'>
-                    <Header language={this.Language} menu_it={menu_it} menu_en={menu_en} active={this.Active}/>
+                    <Header language={this.Language} menu_it={menu_it} menu_en={menu_en} active={this.Active} img={img}/>
                     <Menu index={index} menu={menu}/>
                     <ul id={"list"}  onTouchMove={() => this.StartDrag()} onTouchEnd={() => this.EndDrag()}>
                         {element}

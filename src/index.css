@@ -71,11 +71,10 @@
   }
 
   .backgorund {
-    position:relative;
+    position: absolute;
     z-index:0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-image: url(./img/Background.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -363,7 +362,6 @@
     background: #a0cae4;
     box-shadow:  20px 20px 60px #88acc2,
                 -20px -20px 60px #b8e8ff;
-    background-image: url('./img/language.svg');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -436,7 +434,6 @@
     }
     to{
       padding: 3vh;
-      background-image: url('./img/left-arrow.svg');
       background-size: 50%;
       background-repeat: no-repeat;
       background-position: center;

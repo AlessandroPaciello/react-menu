@@ -1,7 +1,5 @@
 import React from 'react'
-import Category from './category'
-import Logo from './img/logo-header.svg'
-import Scritta from './img/scritta-il-moresco.svg'
+
 
 class Header extends React.Component {
 
@@ -28,11 +26,11 @@ class Header extends React.Component {
     render() {
 
         return <header id={"header"} className="header">
-                    <div id='button_category' className='button_category' onTouchEnd={() => {this.GoBack()}}></div>
-                    <Language language={this.props.language} menu_it={this.props.menu_it} menu_en={this.props.menu_en}/>
+                    <div id='button_category' className='button_category' style={{backgroundImage: `url(${this.props.img.arrow})`}} onTouchEnd={() => {this.GoBack()}}></div>
+                    <Language language={this.props.language} menu_it={this.props.menu_it} menu_en={this.props.menu_en} img={this.props.img}/>
                     <div className="box_logo">
-                        <img className='logo_header' src={Logo}></img>
-                        <img className='scritta_header' src={Scritta}></img>
+                        <img className='logo_header' src={this.props.img.logoHeader}></img>
+                        <img className='scritta_header' src={this.props.img.scrittaHeader}></img>
                         
                     </div>
                     
@@ -67,7 +65,7 @@ class Language extends React.Component {
 
         const {show} = this.state
 
-        return (<div id='button_language' className="button_language button_language-closed" onTouchEnd={(e) => {this.SelectLanguage(e)}}>
+        return (<div id='button_language' className="button_language button_language-closed" style={{backgroundImage: `url(${this.props.img.language})`}} onTouchEnd={(e) => {this.SelectLanguage(e)}}>
                       {
                           show ? <ListLanguage /> : <div> </div>
                       }
