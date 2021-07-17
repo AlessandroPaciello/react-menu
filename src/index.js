@@ -8,31 +8,31 @@ import logo from './img/logo-moresco.svg'
 import bg from './img/Background.svg'
 
 
+const img = [
+  logo,
+  bg
+]
+
 
 class App extends React.Component {
 
   state = {
     isLoading : false,
-    logo : ""
   }
 
   Loading= () => {
 
-    let count = 0
-    
-    fetch(logo)
-    .then(res => {return res.blob()})
-    .then(data => {
-      count = count + 1
-      console.log(count)})
 
-    fetch(bg)
-    .then(res => {return res.blob()})
-    .then(data => {
-      count = count + 1
-      console.log(count)})
-
-      return count
+    img.map((el, index) => {
+      fetch(el)
+      .then(res => {return res.blob()})
+      .then(data => {
+      console.log(data)
+      if(index + 1 === img.length) {
+        this.setState({isLoading : true})
+      }
+      })
+    })
   }
 
 
