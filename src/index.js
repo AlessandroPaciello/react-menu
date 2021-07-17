@@ -41,10 +41,12 @@ class App extends React.Component {
       .then(res => {return res.blob()})
 
       .then((data) => {
-        img[key] = URL.createObjectURL(data)
+        img[key] = URL.createObjectURL(data) 
+        console.log(Object.keys(stringImg).length)
         index ++
       
-      if(index === Object.keys(img).length) {
+      if(index === Object.keys(stringImg).length) {
+        console.log("finish")
         this.setState({isLoading : true})
         }
       })
