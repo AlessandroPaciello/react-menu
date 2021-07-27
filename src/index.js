@@ -41,6 +41,8 @@ class App extends React.Component {
   
   Loading = () => {
 
+    if(!this.state.start) { 
+      this.setState({start : true})
       for (const [key, value] of Object.entries(stringImg) ) {
       
         fetch(value)
@@ -58,8 +60,7 @@ class App extends React.Component {
           }
         })
       }
-    
-
+    }
   }
 
   render() {
