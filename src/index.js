@@ -35,15 +35,12 @@ class App extends React.Component {
       isLoading : false,
       progress: 0
     }
-    
+    this.percentage = 0
+    this.progress = 0
   }
   
   Loading = () => {
 
-    if(!this.state.start) {
-      this.setState({start : true})
-      let percentage
-      let progress = 0
       for (const [key, value] of Object.entries(stringImg) ) {
       
         fetch(value)
@@ -52,17 +49,16 @@ class App extends React.Component {
   
         .then((data) => {
           img[key] = URL.createObjectURL(data)
-          progress ++
-          percentage = parseInt((progress * 40) / Object.keys(stringImg).length) 
-          console.log(percentage)
-          this.setState({progress : percentage})
+          this.progress ++
+          this.percentage = parseInt((this.progress * 40) / Object.keys(stringImg).length) 
+          this.setState({progress : this.percentage})
 
-        if(this.state.progress === Object.keys(stringImg).length) {
+        if(this.progress === Object.keys(stringImg).length) {
           this.setState({isLoading : true})
           }
         })
       }
-    }
+    
 
   }
 
