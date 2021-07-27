@@ -27,6 +27,32 @@
   
   /* home page */
 
+  .container_loadingBar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid blue;
+    height: 100vh;
+  }
+
+  .loadingBar{
+    height: 3vh;
+    border: 2px solid red;
+    border-radius: 2vh;
+    width: 40vh;
+    width: 40vh;
+  }
+
+  .progress{
+    position: absolute;
+    background-color: #1bbb4b;
+    height: 3vh;
+    width: 20vh;
+    border-radius: 2vh;
+  }
+
+
   .elementHome{
     position: absolute;
     flex-direction: column;

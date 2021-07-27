@@ -23,36 +23,48 @@ const stringImg = {
 
 let img = {}
 
+
+
 class App extends React.Component {
 
-  state = {
-    isLoading : false,
+
+  constructor() {
+    super()
+    this.state = {
+      start: false,
+      isLoading : false,
+      progress: 0
+    }
+    
   }
+  
+  Loading = () => {
 
-  Loading= () => {
-
-    let index = 0
-
-    for (const [key, value] of Object.entries(stringImg) ) {
+    if(!this.state.start) {
+      this.setState({start : true})
+      let percentage
+      let progress = 0
+      for (const [key, value] of Object.entries(stringImg) ) {
       
-      
-      fetch(value)
+        fetch(value)
+  
+        .then(res => {return res.blob()})
+  
+        .then((data) => {
+          img[key] = URL.createObjectURL(data)
+          progress ++
+          percentage = parseInt((progress * 40) / Object.keys(stringImg).length) 
+          console.log(percentage)
+          this.setState({progress : percentage})
 
-      .then(res => {return res.blob()})
-
-      .then((data) => {
-        img[key] = URL.createObjectURL(data)
-        index ++
-      
-      if(index === Object.keys(stringImg).length) {
-        this.setState({isLoading : true})
-        }
-      })
+        if(this.state.progress === Object.keys(stringImg).length) {
+          this.setState({isLoading : true})
+          }
+        })
+      }
     }
 
-
   }
-
 
   render() {
 
@@ -61,7 +73,7 @@ class App extends React.Component {
         {
           this.state.isLoading ? <Backgorund img={img} /> : 
           <div>
-            <Loading />
+            <Loading progress={this.state.progress}/>
             <Async promiseFn={() => {this.Loading()}}>
             </Async>
           </div>
@@ -71,8 +83,19 @@ class App extends React.Component {
   }
 }
 
-function Loading() {
-  return <p>loading</p>
+class Loading extends React.Component {
+
+
+
+  render() {
+    return <div className="container_loadingBar">
+            <div className="loadingBar">
+              <div className="progress" style={{width : this.props.progress + "vh"}}></div>
+            </div>
+         </div>
+  }
+  
+    
 }
 
 ReactDOM.render(
