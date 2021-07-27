@@ -33,6 +33,7 @@ class App extends React.Component {
     this.state = {
       start: false,
       isLoading : false,
+      timerFinish: false,
       progress: 0
     }
     this.percentage = 0
@@ -57,6 +58,7 @@ class App extends React.Component {
 
         if(this.progress === Object.keys(stringImg).length) {
           this.setState({isLoading : true})
+          setTimeout(() => {this.setState({timerFinish : true})}, 1000)
           }
         })
       }
@@ -68,7 +70,7 @@ class App extends React.Component {
     return (
       <div>
         {
-          this.state.isLoading ? <Backgorund img={img} /> : 
+          this.state.isLoading && this.state.timerFinish ? <Backgorund img={img} /> : 
           <div>
             <Loading progress={this.state.progress}/>
             <Async promiseFn={() => {this.Loading()}}>

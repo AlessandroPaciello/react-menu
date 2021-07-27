@@ -32,24 +32,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid blue;
+    background-color: #a0cae4;
     height: 100vh;
   }
 
   .loadingBar{
-    height: 3vh;
-    border: 2px solid red;
+    position: relative;
+    height: 4.5vh;
+    border: 5px solid rgb(240, 237, 237);
     border-radius: 2vh;
-    width: 40vh;
     width: 40vh;
   }
 
   .progress{
     position: absolute;
-    background-color: #1bbb4b;
-    height: 3vh;
+    background-color: #1384ca;
+    height: 4.5vh;
     width: 20vh;
-    border-radius: 2vh;
+    border-radius: 1.5vh;
   }
 
 
