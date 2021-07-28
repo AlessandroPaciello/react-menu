@@ -34,7 +34,7 @@ class App extends React.Component {
       start: false,
       isLoading : false,
       timerFinish: false,
-      progress: 0
+      progress: -140
     }
     this.percentage = 0
     this.progress = 0
@@ -53,12 +53,13 @@ class App extends React.Component {
         .then((data) => {
           img[key] = URL.createObjectURL(data)
           this.progress ++
-          this.percentage = parseInt((this.progress * 40) / Object.keys(stringImg).length) 
+          this.percentage = parseInt((this.progress * 100) / Object.keys(stringImg).length) + -140
+          console.log(this.percentage)
           this.setState({progress : this.percentage})
 
         if(this.progress === Object.keys(stringImg).length) {
           this.setState({isLoading : true})
-          setTimeout(() => {this.setState({timerFinish : true})}, 1000)
+          setTimeout(() => {this.setState({timerFinish : true})}, 1500)
           }
         })
       }
@@ -87,14 +88,15 @@ class Loading extends React.Component {
 
 
   render() {
-    return <div className="container_loadingBar">
-            <div className="loadingBar">
-              <div className="progress" style={{width : this.props.progress + "vh"}}></div>
-            </div>
-         </div>
+    return <div className="container_coffe-cup">
+              <div className="coffe-cup">
+                <div className="loading" style={{bottom : this.props.progress + "px"}}></div>
+              </div>
+              <div className="handle"></div>
+           </div>
   }
   
-    
+ 
 }
 
 ReactDOM.render(

@@ -27,7 +27,7 @@
   
   /* home page */
 
-  .container_loadingBar{
+  .container_coffe-cup {
     position: relative;
     display: flex;
     align-items: center;
@@ -36,21 +36,49 @@
     height: 100vh;
   }
 
-  .loadingBar{
-    position: relative;
-    height: 4.5vh;
-    border: 5px solid rgb(240, 237, 237);
-    border-radius: 2vh;
-    width: 40vh;
+  .coffe-cup {
+      position: relative;
+      height: 120px;
+      width: 140px;
+      border: 8px solid rgb(236, 236, 236);
+      border-radius: 1.5vh 1.5vh 7.5vh 7.5vh;
+      overflow: hidden;
   }
 
-  .progress{
-    position: absolute;
-    background-color: #1384ca;
-    height: 4.5vh;
-    width: 20vh;
-    border-radius: 1.5vh;
+  .handle {
+      position: absolute;
+      height: 50px;
+      width: 30px;
+      right: 62px;
+      margin-top: -30px;
+      border: 8px solid rgb(236, 236, 236);
+      border-radius: 0 2.5vh 5vh 0;
+      
   }
+
+  .loading {
+      position: absolute;
+      content: "";
+      height: 200px;
+      width: 200px;
+      left: -30px;
+      bottom: -140px;
+      background: rgb(87, 15, 15);
+      border-radius: 38%;
+      animation: loading 3s linear infinite;
+  }
+
+  @keyframes loading {
+      0% {
+          transform: rotate(0);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+      
+  }
+
 
 
   .elementHome{
